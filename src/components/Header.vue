@@ -6,9 +6,7 @@
       </div>
         <h1 id="logo-text">pedia.ca</h1>
     </div>
-    <div id="search-container">
-      <h1 id="search-text">More Travel</h1>
-    </div>
+    <HeaderSearch />
     <div id="header-toolbar">
       <h1 class="toolbar-links">Francais</h1>
       <h1 class="toolbar-links">Trips</h1>
@@ -18,8 +16,13 @@
 </template>
 
 <script>
+import HeaderSearch from './HeaderSearch.vue'
+
 export default {
   name: 'Header',
+    components: {
+    HeaderSearch
+  },
   props: {
   }
 }
@@ -67,20 +70,6 @@ export default {
   font-size: 50px;
   margin: 0;
   width: 60px;
-}
-
-#search-container{
-  margin-top: 25px;
-  width: 120px;
-  height: 20px;
-  background-color: white;
-}
-
-#search-text{
-  margin: 0px;
-  color: teal;
-  font-size: 20px;
-  width: 120px;
 }
 
 #header-toolbar{
