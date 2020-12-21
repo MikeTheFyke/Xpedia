@@ -21,8 +21,4 @@ body{
   margin: 0px;
 }
 
-#app{
-  
-}
-
 </style>

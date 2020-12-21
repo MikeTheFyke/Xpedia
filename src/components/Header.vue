@@ -34,7 +34,7 @@ export default {
   width: 100vw;
   height: 60px;
   padding: 10px 10px;
-  background-color: lightgreen;
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -70,7 +70,7 @@ export default {
 }
 
 #search-container{
-  margin-top: 30px;
+  margin-top: 25px;
   width: 120px;
   height: 20px;
   background-color: white;
@@ -90,7 +90,7 @@ export default {
   height: 20px;
   background-color: white;
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .toolbar-links{
