@@ -16,8 +16,18 @@
 </template>
 
 <script>
+import TweenMax  from 'gsap';
+
 export default {
-    name: 'HeaderSearch'
+    name: 'HeaderSearch',
+    data(){
+        return{
+
+        }
+    }, mounted: function(){
+         TweenMax.to("#search-subbar", 0, { opacity: 0})
+         TweenMax.to("#search-subbar", 1, { opacity: 1, delay: 1})
+    }
 }
 </script>
 
