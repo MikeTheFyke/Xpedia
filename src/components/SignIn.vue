@@ -31,4 +31,15 @@ export default {
   margin-left: 5px;
 }
 
+#SignIn-DropDown{
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #e1e3e6;
+}
+
 </style>
