@@ -16,7 +16,18 @@ export default {
             return{
 
             }
-        }
+        },
+        mounted: function(){
+            TweenMax.to("#SignIn-DropDown", 0, { opacity: 0})
+        },
+        methods: {
+            expand() {
+                TweenMax.to("#SignIn-DropDown", 1, { opacity: 1, delay: 1})
+            },
+            close() {
+                TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
+            }
+        
 }
 </script>
 
