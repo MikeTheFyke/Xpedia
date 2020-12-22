@@ -1,16 +1,16 @@
 <template>
     <div>
-        <div id="search-container" v-on:click="expand()">
-            <h1 id="search-text">More Travel</h1>
-        </div>
-        <div id="search-subbar" >
-            <h1 class="subbar-item">Stays</h1>
-            <h1 class="subbar-item">Flights</h1>
-            <h1 class="subbar-item">Rovers</h1>
-            <h1 class="subbar-item">Shuttles</h1>
-            <h1 class="subbar-item">Packages</h1>
-            <h1 class="subbar-item">Things To Do</h1>
-            <h1 class="subbar-item">Deals</h1>
+        <div id="search-container" @mouseover="expand" @mouseleave="close">
+            <h1 id="search-text">More Travel</h1>   
+            <div id="search-subbar" >
+                <h1 class="subbar-item">Stays</h1>
+                <h1 class="subbar-item">Flights</h1>
+                <h1 class="subbar-item">Rovers</h1>
+                <h1 class="subbar-item">Shuttles</h1>
+                <h1 class="subbar-item">Packages</h1>
+                <h1 class="subbar-item">Things To Do</h1>
+                <h1 class="subbar-item">Deals</h1>
+            </div>
         </div>
     </div>
 </template>
@@ -26,11 +26,13 @@ export default {
         }
     }, mounted: function(){
          TweenMax.to("#search-subbar", 0, { opacity: 0})
-        //  TweenMax.to("#search-subbar", 1, { opacity: 1, delay: 1})
     },
         methods: {
             expand() {
                 TweenMax.to("#search-subbar", 1, { opacity: 1, delay: 1})
+            },
+            close() {
+                TweenMax.to("#search-subbar", 1, { opacity: 0, delay: 1})
             }
         }
 }
@@ -55,8 +57,8 @@ export default {
 
 #search-subbar{
     position: absolute;
-    top: 80px;
-    left: 260px;
+    top: 40px;
+    left: -20px;
     width: 400px;
     height: 250px;
     padding: 10px;
