@@ -28,6 +28,7 @@ export default {
                 TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
             }
         
+    }
 }
 </script>
 

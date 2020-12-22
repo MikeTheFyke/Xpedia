@@ -10,18 +10,20 @@
     <div id="header-toolbar">
       <h1 class="toolbar-links">Francais</h1>
       <h1 class="toolbar-links">Trips</h1>
-      <h1 class="toolbar-links">Sign In</h1>
+      <SignIn />
     </div>
   </div>
 </template>
 
 <script>
 import HeaderSearch from './HeaderSearch.vue'
+import SignIn from './SignIn.vue'
 
 export default {
   name: 'Header',
     components: {
-    HeaderSearch
+    HeaderSearch,
+    SignIn
   },
   props: {
   }
