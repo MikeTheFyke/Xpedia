@@ -1,5 +1,5 @@
 <template>
-<div id="SignIn-Container">
+<div id="SignIn-Container" @mouseover="expand" @mouseleave="close">
         <h1 id="SignIn-Link">Sign In</h1>
         <div id="SignIn-DropDown">
 
