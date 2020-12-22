@@ -2,7 +2,7 @@
 <div id="SignIn-Container" @mouseover="expand" @mouseleave="close">
         <h1 id="SignIn-Link">Sign In</h1>
         <div id="SignIn-DropDown">
-
+            <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
         </div>
 </div>
     
@@ -46,12 +46,18 @@ export default {
 #SignIn-DropDown{
     position: absolute;
     top: 80px;
-    right: 30px;
-    width: 400px;
+    right: 140px;
+    width: 450px;
     height: 250px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 10px 8px 8px 10px #e1e3e6;
+    padding: 10px;
+}
+
+#DropDown-Title{
+    color: black;
+    font-size: 25px;
 }
 
 </style>
