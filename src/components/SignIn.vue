@@ -29,7 +29,10 @@ export default {
                 TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
             },
             buttonPopUp() {
-                TweenMax.to("#SignIn-Button", 1, { scaleX: 1.15, scaleY: 1.15})
+                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1.05, scaleY: 1.05, backgroundColor: "white", color: "#099be3", borderStyle: "solid", borderColor: "#099be3", ease: "Linear.easeInOut" });
+            },
+            buttonUnPop() {
+                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1, scaleY: 1, backgroundColor: "#099be3", color: "white", ease: "Linear.easeInOut" });
             }
     }
 }
@@ -58,6 +61,7 @@ export default {
     border-radius: 10px;
     box-shadow: 10px 8px 8px 10px #e1e3e6;
     padding: 10px;
+    text-align: center;
 }
 
 #DropDown-Title{
@@ -67,7 +71,7 @@ export default {
 }
 
 #SignIn-Button{
-    width: 100%;
+    width: 90%;
     height: 40px;
     border-radius: 10px;
     border-style: none;
