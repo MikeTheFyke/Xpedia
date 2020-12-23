@@ -41,7 +41,7 @@ export default {
 <style scoped>
 #search-container{
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 260px;
     width: 120px;
     height: 20px;

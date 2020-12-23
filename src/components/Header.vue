@@ -84,7 +84,7 @@ export default {
   height: 20px;
   background-color: white;
   margin-right: 20px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .toolbar-links{
