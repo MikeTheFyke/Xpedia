@@ -71,7 +71,8 @@ export default {
 
 #logo-text{
   color: teal;
-  font-size: 50px;
+  font-family:"Montserrat";
+  font-size: 40px;
   margin: 0;
   width: 60px;
 }
