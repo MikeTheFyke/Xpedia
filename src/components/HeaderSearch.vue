@@ -51,6 +51,7 @@ export default {
 #search-text{
     margin: 0px;
     color: teal;
+    font-family:"Montserrat";
     font-size: 20px;
     width: 120px;
 }

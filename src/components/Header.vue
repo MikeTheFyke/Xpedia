@@ -89,6 +89,7 @@ export default {
 .toolbar-links{
   color: teal;
   font-size: 20px;
+  font-family:"Montserrat";
   width: 62px;
   margin: 0px;
   margin-right: 5px;

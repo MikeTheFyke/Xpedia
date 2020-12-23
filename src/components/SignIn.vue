@@ -36,6 +36,7 @@ export default {
 
 #SignIn-Link{
     color: teal;
+    font-family:"Montserrat";
     font-size: 20px;
     width: 62px;
     margin: 0px;
