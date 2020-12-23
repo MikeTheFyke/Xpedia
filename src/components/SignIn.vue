@@ -3,7 +3,7 @@
         <h1 id="SignIn-Link">Sign In</h1>
         <div id="SignIn-DropDown">
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
-            <button id="SignIn-Button">Sign in</button>
+            <button id="SignIn-Button" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">Sign in</button>
         </div>
 </div>
     
@@ -27,8 +27,10 @@ export default {
             },
             close() {
                 TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
+            },
+            buttonPopUp() {
+                TweenMax.to("#SignIn-Button", 1, { scaleX: 1.15, scaleY: 1.15})
             }
-        
     }
 }
 </script>
