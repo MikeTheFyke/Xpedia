@@ -35,12 +35,12 @@ export default {
 <style scoped>
 
 #SignIn-Link{
-  color: teal;
-  font-size: 20px;
-  width: 62px;
-  margin: 0px;
-  margin-right: 5px;
-  margin-left: 5px;
+    color: teal;
+    font-size: 20px;
+    width: 62px;
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #SignIn-DropDown{
