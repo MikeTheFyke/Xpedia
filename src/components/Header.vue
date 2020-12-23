@@ -79,7 +79,7 @@ export default {
 #header-toolbar{
   display: flex;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 55vw;
   height: 20px;
   background-color: white;
   margin-right: 20px;

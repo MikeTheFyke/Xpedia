@@ -42,6 +42,7 @@ export default {
     margin: 0px;
     margin-right: 5px;
     margin-left: 5px;
+    white-space: nowrap;
 }
 
 #SignIn-DropDown{
