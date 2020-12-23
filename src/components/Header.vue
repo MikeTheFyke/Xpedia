@@ -48,7 +48,6 @@ export default {
 #logo-container{
   width: 240px;
   height: 60px;
-  background-color: white;
   overflow: hidden;
   display: flex;
   justify-content:start;
@@ -82,7 +81,6 @@ export default {
   justify-content: space-evenly;
   width: 55vw;
   height: 20px;
-  background-color: white;
   margin-right: 20px;
   margin-top: 20px;
 }

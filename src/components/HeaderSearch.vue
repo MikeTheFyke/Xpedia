@@ -45,7 +45,6 @@ export default {
     left: 260px;
     width: 120px;
     height: 20px;
-    background-color: white;
 }
 
 #search-text{

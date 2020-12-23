@@ -76,7 +76,7 @@ export default {
     border-radius: 10px;
     border-style: none;
     background-color: #099be3;
-    color: white;
+    color: transparent;
     font-family:"Montserrat";
     font-size: 20px;
 }
