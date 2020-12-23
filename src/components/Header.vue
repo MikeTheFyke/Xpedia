@@ -19,6 +19,7 @@
 import HeaderSearch from './HeaderSearch.vue'
 import SignIn from './SignIn.vue'
 
+
 export default {
   name: 'Header',
     components: {
@@ -63,6 +64,7 @@ export default {
 
 #logo-X{
   color: yellow;
+  font-family:"Montserrat";
   font-size: 50px;
   margin: 0;
 }

@@ -20,5 +20,10 @@ export default {
 body{
   margin: 0px;
 }
+@font-face{
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+  url(./fonts/Montserrat-Regular.ttf) format("truetype");
+}
 
 </style>
