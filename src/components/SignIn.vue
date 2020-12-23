@@ -3,6 +3,7 @@
         <h1 id="SignIn-Link">Sign In</h1>
         <div id="SignIn-DropDown">
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
+            <button id="SignIn-Button">Sign in</button>
         </div>
 </div>
     
@@ -48,7 +49,7 @@ export default {
 #SignIn-DropDown{
     position: absolute;
     top: 80px;
-    right: 140px;
+    right: 120px;
     width: 450px;
     height: 250px;
     padding: 10px;
@@ -59,7 +60,19 @@ export default {
 
 #DropDown-Title{
     color: black;
-    font-size: 25px;
+    font-family:"Montserrat";
+    font-size: 20px;
+}
+
+#SignIn-Button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #099be3;
+    color: white;
+    font-family:"Montserrat";
+    font-size: 20px;
 }
 
 </style>
