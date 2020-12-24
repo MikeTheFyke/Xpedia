@@ -20,16 +20,16 @@ export default {
     },
     mounted: function(){
         var banner = TweenMax.timeline( { repeat: -1 });
-        banner.to("#banner1", 1, {opacity:0, delay: 1})
-            .to("#banner2", 1, {opacity:0, delay: 2})
-            .to("#banner3", 1, {opacity:0, delay: 3})
-            .to("#banner4", 1, {opacity:0, delay: 4})
-            .to("#banner5", 1, {opacity:0, delay: 5})
-            .to("#banner1", 0, {opacity:1, delay: 5})
-            .to("#banner2", 0, {opacity:1, delay: 5})
-            .to("#banner3", 0, {opacity:1, delay: 5})
-            .to("#banner4", 0, {opacity:1, delay: 5})
-            .to("#banner5", 0, {opacity:1, delay: 5})
+        banner.to("#banner5", 2, {opacity:0})
+            .to("#banner4", 2, {opacity:0})
+            .to("#banner3", 2, {opacity:0})
+            .to("#banner2", 2, {opacity:0})
+            .to("#banner1", 2, {opacity:0})
+            .to("#banner5", 0, {opacity:1})
+            .to("#banner1", 0, {opacity:1})
+            .to("#banner2", 0, {opacity:1})
+            .to("#banner3", 0, {opacity:1})
+            .to("#banner4", 0, {opacity:1})
     },
     methods:{
     }
