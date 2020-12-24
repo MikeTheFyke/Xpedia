@@ -19,11 +19,17 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#banner1", 1, {opacity:0, delay: 1})
-        TweenMax.to("#banner2", 1, {opacity:0, delay: 2})
-        TweenMax.to("#banner3", 1, {opacity:0, delay: 3})
-        TweenMax.to("#banner4", 1, {opacity:0, delay: 4})
-        TweenMax.to("#banner5", 1, {opacity:0, delay: 5})
+        var banner = TweenMax.timeline( { repeat: -1 });
+        banner.to("#banner1", 1, {opacity:0, delay: 1})
+            .to("#banner2", 1, {opacity:0, delay: 2})
+            .to("#banner3", 1, {opacity:0, delay: 3})
+            .to("#banner4", 1, {opacity:0, delay: 4})
+            .to("#banner5", 1, {opacity:0, delay: 5})
+            .to("#banner1", 0, {opacity:1, delay: 5})
+            .to("#banner2", 0, {opacity:1, delay: 5})
+            .to("#banner3", 0, {opacity:1, delay: 5})
+            .to("#banner4", 0, {opacity:1, delay: 5})
+            .to("#banner5", 0, {opacity:1, delay: 5})
     },
     methods:{
     }
