@@ -34,7 +34,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style >
 
 #header-container{
   position: absolute;
@@ -106,6 +106,18 @@ label{
 
 #toggle{
   display: none;
+}
+
+@media only screen and (max-width: 650px){
+  label{
+    display: block;
+    cursor: pointer;
+  }
+  
+  .toolbar-links{
+    display: none;
+  }
+
 }
 
 </style>
