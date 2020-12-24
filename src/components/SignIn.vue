@@ -24,11 +24,11 @@ export default {
         methods: {
             expand() {
                 if (this.clicked === false){
-                    TweenMax.to("#SignIn-DropDown", 1, { opacity: 1, delay: 1})
-                    this.clicked === true
+                    TweenMax.to("#SignIn-DropDown", 0.5, { opacity: 1, delay: 1})
+                    this.clicked = true
                 } else {
-                    TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
-                    this.clicked === false
+                    TweenMax.to("#SignIn-DropDown", 0.5, { opacity: 0, delay: 1})
+                    this.clicked = false
                 }
             },
             close() {
