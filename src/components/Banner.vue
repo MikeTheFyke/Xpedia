@@ -1,11 +1,11 @@
 <template>
     <div id="Banner-Container">
-        <img :src="SunSurface" />
+        <img src="../images/sun-surface.jpg" class="banner-image"/>
     </div>    
 </template>
 
 <script>
-import SunSurface from './images/sun-surface.jpg'
+// import SunSurface from '../images/sun-surface.jpg'
 
 export default {
     name: 'Banner'
@@ -17,7 +17,11 @@ export default {
 #Banner-Container{
     width: 100%;
     height: 300px;
-    background-color: teal;
+}
+
+.banner-image{
+    height: 100%;
+    width: 100%;
 }
 
 </style>
