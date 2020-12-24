@@ -72,4 +72,10 @@ export default {
     font-weight: lighter;
     color: lightslategrey;
 }
+
+@media only screen and (max-width: 650px){
+    #search-text{
+        display: none;
+    }
+}
 </style>

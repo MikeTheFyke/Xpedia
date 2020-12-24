@@ -83,7 +83,7 @@ export default {
   justify-content: space-evenly;
   width: 55vw;
   height: 20px;
-  margin-right: -50px;
+  margin-right: -20px;
   margin-top: 20px;
 }
 
