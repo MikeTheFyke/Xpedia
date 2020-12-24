@@ -19,15 +19,15 @@ export default {
             }
         },
         mounted: function(){
-            TweenMax.to("#SignIn-DropDown", 0, { opacity: 0})
+            TweenMax.to("#SignIn-DropDown", 0, { scaleY: 0, opacity: 0})
         },
         methods: {
             expand() {
                 if (this.clicked === false){
-                    TweenMax.to("#SignIn-DropDown", 0.5, { opacity: 1, delay: 1})
+                    TweenMax.to("#SignIn-DropDown", 0.5, { scaleY: 1, opacity: 1, delay: 1})
                     this.clicked = true
                 } else {
-                    TweenMax.to("#SignIn-DropDown", 0.5, { opacity: 0, delay: 1})
+                    TweenMax.to("#SignIn-DropDown", 0.5, { scaleY: 0, opacity: 0, delay: 1})
                     this.clicked = false
                 }
             },
