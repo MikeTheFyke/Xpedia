@@ -73,7 +73,7 @@ export default {
     color: lightslategrey;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 700px){
     #search-text{
         display: none;
     }

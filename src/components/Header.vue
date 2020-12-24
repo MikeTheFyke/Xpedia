@@ -98,6 +98,8 @@ export default {
 }
 
 label{
+  position: absolute;
+  right: 30px;
   color: teal;
   font-size: 40px;
   line-height: 20px;
@@ -108,7 +110,7 @@ label{
   display: none;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 700px){
   label{
     display: block;
     cursor: pointer;
