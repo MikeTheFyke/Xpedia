@@ -24,15 +24,12 @@ export default {
         methods: {
             expand() {
                 if (this.clicked === false){
-                    TweenMax.to("#SignIn-DropDown", 0.5, { scaleY: 1, opacity: 1, delay: 1})
+                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 1, opacity: 1, delay: 1, transformOrigin: "50% 0%" })
                     this.clicked = true
                 } else {
-                    TweenMax.to("#SignIn-DropDown", 0.5, { scaleY: 0, opacity: 0, delay: 1})
+                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 0, opacity: 0, delay: 1, transformOrigin: "50% 0%" })
                     this.clicked = false
                 }
-            },
-            close() {
-                TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
             },
             buttonPopUp() {
                 TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1.05, scaleY: 1.05, backgroundColor: "white", color: "#099be3", borderStyle: "solid", borderColor: "#099be3", ease: "Linear.easeInOut" });
