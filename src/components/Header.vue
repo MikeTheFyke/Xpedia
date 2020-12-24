@@ -11,6 +11,8 @@
       <h1 class="toolbar-links">Francais</h1>
       <h1 class="toolbar-links">Trips</h1>
       <SignIn />
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
     </div>
   </div>
 </template>
@@ -40,7 +42,7 @@ export default {
   width: 100vw;
   height: 60px;
   padding: 10px 10px;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +66,7 @@ export default {
 #logo-X{
   color: yellow;
   font-family:"Montserrat";
-  font-size: 50px;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -93,6 +95,17 @@ export default {
   margin: 0px;
   margin-right: 5px;
   margin-left: 5px;
+}
+
+label{
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  line-height: 20px;
+  display: none;
+}
+
+#toggle{
+  display: none;
 }
 
 </style>
