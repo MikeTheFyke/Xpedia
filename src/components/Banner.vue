@@ -19,17 +19,15 @@ export default {
         }
     },
     mounted: function(){
-        var banner = TweenMax.timeline( { repeat: -1 });
+        var banner = TweenMax.timeline( { repeat: -1, ease: "Linear.easeInOut" })
         banner.to("#banner5", 2, {opacity:0})
             .to("#banner4", 2, {opacity:0})
             .to("#banner3", 2, {opacity:0})
             .to("#banner2", 2, {opacity:0})
-            .to("#banner1", 2, {opacity:0})
-            .to("#banner5", 0, {opacity:1})
-            .to("#banner1", 0, {opacity:1})
-            .to("#banner2", 0, {opacity:1})
-            .to("#banner3", 0, {opacity:1})
+            .to("#banner5", 2, {opacity:1})
             .to("#banner4", 0, {opacity:1})
+            .to("#banner3", 0, {opacity:1})
+            .to("#banner2", 0, {opacity:1})
     },
     methods:{
     }
