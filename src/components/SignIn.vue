@@ -1,5 +1,5 @@
 <template>
-<div id="SignIn-Container" @mouseover="expand" @mouseleave="close">
+<div id="SignIn-Container" v-on:click="expand">
         <h1 id="SignIn-Link">Sign In</h1>
         <div id="SignIn-DropDown">
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
@@ -15,7 +15,7 @@ export default {
     name: 'SignIn',
         data(){
             return{
-
+            clicked: false,
             }
         },
         mounted: function(){
@@ -23,7 +23,13 @@ export default {
         },
         methods: {
             expand() {
-                TweenMax.to("#SignIn-DropDown", 1, { opacity: 1, delay: 1})
+                if (this.clicked === false){
+                    TweenMax.to("#SignIn-DropDown", 1, { opacity: 1, delay: 1})
+                    this.clicked === true
+                } else {
+                    TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
+                    this.clicked === false
+                }
             },
             close() {
                 TweenMax.to("#SignIn-DropDown", 1, { opacity: 0, delay: 1})
