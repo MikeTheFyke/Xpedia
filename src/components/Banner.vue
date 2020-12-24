@@ -1,6 +1,10 @@
 <template>
     <div id="Banner-Container">
         <img src="../images/sun-surface.jpg" class="banner-image"/>
+        <img src="../images/mercury-surface.jpg" class="banner-image"/>
+        <img src="../images/venus-surface.jpg" class="banner-image"/>
+        <img src="../images/earth-surface.jpg" class="banner-image"/>
+        <img src="../images/moon-surface.png" class="banner-image"/>
     </div>    
 </template>
 
@@ -19,6 +23,9 @@ export default {
 }
 
 .banner-image{
+    position: inherit;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
 }
