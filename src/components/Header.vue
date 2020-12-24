@@ -83,7 +83,7 @@ export default {
   justify-content: space-evenly;
   width: 55vw;
   height: 20px;
-  margin-right: 20px;
+  margin-right: -50px;
   margin-top: 20px;
 }
 
@@ -98,8 +98,8 @@ export default {
 }
 
 label{
-  margin: 0 40px 0 0;
-  font-size: 20px;
+  color: teal;
+  font-size: 40px;
   line-height: 20px;
   display: none;
 }
