@@ -65,6 +65,7 @@ export default {
     box-shadow: 10px 8px 8px 10px #e1e3e6;
     padding: 10px;
     text-align: center;
+    background-color: white;
 }
 
 #DropDown-Title{
@@ -79,7 +80,7 @@ export default {
     border-radius: 10px;
     border-style: none;
     background-color: #099be3;
-    color: transparent;
+    color: white;
     font-family:"Montserrat";
     font-size: 20px;
 }
