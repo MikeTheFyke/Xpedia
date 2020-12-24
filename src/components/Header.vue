@@ -42,7 +42,7 @@ export default {
   width: 100vw;
   height: 60px;
   padding: 10px 10px;
-  /* background-color: white; */
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
