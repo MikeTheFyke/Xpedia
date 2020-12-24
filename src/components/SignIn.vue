@@ -81,4 +81,10 @@ export default {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 650px){
+    #SignIn-Link{
+    display: none;
+    }
+}
+
 </style>
