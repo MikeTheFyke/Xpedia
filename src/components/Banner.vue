@@ -1,10 +1,12 @@
 <template>
     <div id="Banner-Container">
-
+        <img :src="SunSurface" />
     </div>    
 </template>
 
 <script>
+import SunSurface from './images/sun-surface.jpg'
+
 export default {
     name: 'Banner'
 }
