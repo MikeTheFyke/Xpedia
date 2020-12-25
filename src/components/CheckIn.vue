@@ -23,11 +23,13 @@
                 <input type="checkbox" id="RoverCheck" name="RoverCheck" value="Rover"/>
                 <h1 class="CheckBox-Label">Add a Rover</h1>
             </div>
-                <button id="Search-Button">Search</button>
+                <button id="Search-Button" @mouseover="SearchHover">Search</button>
         </div>
 </template>
 
 <script>
+import TweenMax  from 'gsap';
+
 export default {
         name: 'CheckIn',
     data(){
@@ -37,6 +39,9 @@ export default {
     }, mounted: function(){
     },
         methods: {
+            SearchHover() {
+                TweenMax.to("#Search-Button", 0.5, { scaleX: 1.25, scaleY: 1.25, backgroundColor: "white", color: "teal", borderColor: "teal"})
+            },
         }    
 }
 </script>
@@ -140,6 +145,7 @@ input[type=checkbox]{
     height: 40px;
     border-color: transparent;
     margin: 60px 40%;
+    outline: none;
 }
 
 </style>
