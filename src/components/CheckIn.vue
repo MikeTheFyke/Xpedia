@@ -15,10 +15,12 @@
                 <input class="CheckIn-Input-Sm" type="text" placeholder="Check-out">
             </div>
             <input class="CheckIn-Input" type="text" placeholder="Travellers">
+
             <label for="Flight-Check">Add a Flight</label>
-            <input type="checkbox" id="Flight-Check"/>
+            <input type="checkbox" id="Flight-Check" name="Flight-Check"/>
+            
             <label for="Flight-Check">Add a Rover</label>
-            <input type="checkbox" id="Rover-Check"/>
+            <input type="checkbox" id="Rover-Check" name="Rover-Check"/>
         </div>
 </template>
 
@@ -84,7 +86,7 @@ export default {
     font-size: 20px;
     padding: 0px 5px;
     border-radius: 5px;
-    border-color: teal;
+    border-color: #dfe3e6;
     border-style: solid;
     border-width: 2.5px; 
 }
@@ -102,9 +104,16 @@ export default {
     font-size: 20px;
     padding: 0px 5px;
     border-radius: 5px;
-    border-color: teal;
+    border-color: #dfe3e6;
     border-style: solid;
     border-width: 2.5px; 
 }
 
+#Flight-Check{
+    border-color: #dfe3e6;
+}
+
+#Rover-Check{
+    border-color: #dfe3e6;
+}
 </style>
