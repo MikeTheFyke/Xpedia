@@ -5,6 +5,13 @@
         <img src="../images/venus-surface.jpg" class="banner-image" id="banner3"/>
         <img src="../images/earth-surface.jpg" class="banner-image" id="banner4"/>
         <img src="../images/moon-surface.png" class="banner-image" id="banner5"/>
+        <img src="../images/mars-surface.jpg" class="banner-image" id="banner6"/>
+        <img src="../images/deimos-surface.jpg" class="banner-image" id="banner7"/>
+        <img src="../images/jupiter-surface.png" class="banner-image" id="banner8"/>
+        <img src="../images/saturn-surface.png" class="banner-image" id="banner9"/>
+        <img src="../images/neptune-surface.jpg" class="banner-image" id="banner10"/>
+        <img src="../images/uranus-surface.jpg" class="banner-image" id="banner11"/>
+        <img src="../images/pluto-surface.jpg" class="banner-image" id="banner12"/>
     </div>    
 </template>
 
