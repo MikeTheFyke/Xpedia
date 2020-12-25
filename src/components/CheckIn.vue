@@ -23,6 +23,7 @@
                 <input type="checkbox" id="RoverCheck" name="RoverCheck" value="Rover"/>
                 <h1 class="CheckBox-Label">Add a Rover</h1>
             </div>
+                <button id="Search-Button">Search</button>
         </div>
 </template>
 
@@ -128,6 +129,17 @@ input[type=checkbox]{
     font-family: "Montserrat";
     font-size: 14px;
     margin: 0 40px 0 10px;
+}
+
+#Search-Button{
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    width: 20%;
+    height: 40px;
+    border-color: transparent;
+    margin: 60px 40%;
 }
 
 </style>
