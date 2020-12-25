@@ -2,18 +2,21 @@
   <div id="app">
     <Banner />
     <Header />
+    <CheckIn />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
+import CheckIn from './components/CheckIn.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Banner,
+    CheckIn,
   }
 }
 </script>
