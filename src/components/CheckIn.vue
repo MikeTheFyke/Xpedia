@@ -1,6 +1,8 @@
 <template>
         <div id="CheckIn-Container">
+            <div id="CheckIn-Header">
 
+            </div>
         </div>
 </template>
 
@@ -27,7 +29,16 @@ export default {
     height: 500px;
     border-radius: 15px;
     margin: 0 5%;
-    background-color: red;
+    background-color: white;
+    box-shadow: 0px 8px 6px 8px #dfe3e6;
+}
+
+#CheckIn-Header{
+    width: 100%;
+    height: 100px;
+    border-bottom: grey;
+    border-bottom-style: solid;
+    border-width: thin;
 }
 
 </style>
