@@ -14,6 +14,11 @@
                 <input class="CheckIn-Input-Sm" type="text" placeholder="Check-in">
                 <input class="CheckIn-Input-Sm" type="text" placeholder="Check-out">
             </div>
+            <input class="CheckIn-Input" type="text" placeholder="Travellers">
+            <label for="Flight-Check">Add a Flight</label>
+            <input type="checkbox" id="Flight-Check"/>
+            <label for="Flight-Check">Add a Rover</label>
+            <input type="checkbox" id="Rover-Check"/>
         </div>
 </template>
 
