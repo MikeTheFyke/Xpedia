@@ -17,4 +17,11 @@ export default {
 
 <style scoped>
 
+#Safety-Container{
+    width: 90%;
+    height: 300px;
+    margin: 10px 5%;
+    background-color: red;
+}
+
 </style>
