@@ -19,7 +19,7 @@
             <div id="CheckBox-Container">
                 <input type="checkbox" id="FlightCheck" name="FlightCheck" value="Flight"/>
                 <h1 class="CheckBox-Label">Add a Flight</h1>
-
+            
                 <input type="checkbox" id="RoverCheck" name="RoverCheck" value="Rover"/>
                 <h1 class="CheckBox-Label">Add a Rover</h1>
             </div>
@@ -120,7 +120,6 @@ export default {
 input[type=checkbox]{
     cursor: pointer;
     border-color: #dfe3e6;
-    
     width: 20px;
     height: 20px;
 }
@@ -128,7 +127,7 @@ input[type=checkbox]{
 .CheckBox-Label{
     font-family: "Montserrat";
     font-size: 14px;
-    margin: 0;
+    margin: 0 40px 0 10px;
 }
 
 </style>
