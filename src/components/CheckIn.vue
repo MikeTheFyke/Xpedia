@@ -9,6 +9,11 @@
                 <div class="Header-Item"><div class="Header-Item-Img"></div>Things To Do</div>
                 <div class="Header-Item"><div class="Header-Item-Img"></div>Cruises</div>
             </div>
+            <input class="CheckIn-Input" type="text" placeholder="Going to">
+            <div id="CheckIn-Sm-Container">
+                <input class="CheckIn-Input-Sm" type="text" placeholder="Check-in">
+                <input class="CheckIn-Input-Sm" type="text" placeholder="Check-out">
+            </div>
         </div>
 </template>
 
@@ -65,6 +70,36 @@ export default {
     font-family:"Montserrat";
     font-size: 10px;
     text-align: center;
+}
+
+.CheckIn-Input{
+    height: 40px;
+    width: 90%;
+    margin: 10px 5%;
+    font-size: 20px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border-color: teal;
+    border-style: solid;
+    border-width: 2.5px; 
+}
+
+#CheckIn-Sm-Container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 7px;
+}
+
+.CheckIn-Input-Sm{
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    border-color: teal;
+    border-style: solid;
+    border-width: 2.5px; 
 }
 
 </style>
