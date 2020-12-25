@@ -36,7 +36,7 @@ export default {
     border-radius: 15px;
     margin: 0 5%;
     background-color: white;
-    box-shadow: 0px 8px 6px 8px #dfe3e6;
+    box-shadow: 0px 10px 8px 0px #dfe3e6;
 }
 
 #CheckIn-Header{
