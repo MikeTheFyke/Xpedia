@@ -53,9 +53,9 @@ export default {
 
 #CheckIn-Container{
     position: absolute;
-    top: 250px;
+    top: 200px;
     width: 90%;
-    height: 500px;
+    height: 400px;
     border-radius: 15px;
     margin: 0 5%;
     background-color: white;
@@ -148,7 +148,7 @@ input[type=checkbox]{
     height: 40px;
     border-color: transparent;
     border-style: solid;
-    margin: 60px 40%;
+    margin: 10px 40%;
     outline: none;
 }
 

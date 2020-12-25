@@ -59,12 +59,12 @@ export default {
 
 #Banner-Container{
     width: 100%;
-    height: 300px;
+    height: 700px;
 }
 
 .banner-image{
     position: absolute;
-    height: 300px;
+    height: 700px;
     width: 100%;
 }
 
