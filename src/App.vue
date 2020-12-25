@@ -3,6 +3,7 @@
     <Banner />
     <Header />
     <CheckIn />
+    <Safety />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
 import CheckIn from './components/CheckIn.vue'
+import Safety from './components/Safety.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Header,
     Banner,
     CheckIn,
+    Safety,
   }
 }
 </script>
