@@ -18,7 +18,7 @@
 
             <label for="Flight-Check">Add a Flight</label>
             <input type="checkbox" id="Flight-Check" name="Flight-Check"/>
-            
+
             <label for="Flight-Check">Add a Rover</label>
             <input type="checkbox" id="Rover-Check" name="Rover-Check"/>
         </div>
@@ -116,4 +116,9 @@ export default {
 #Rover-Check{
     border-color: #dfe3e6;
 }
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
 </style>
