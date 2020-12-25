@@ -23,7 +23,7 @@
                 <input type="checkbox" id="RoverCheck" name="RoverCheck" value="Rover"/>
                 <h1 class="CheckBox-Label">Add a Rover</h1>
             </div>
-                <button id="Search-Button" @mouseover="SearchHover">Search</button>
+                <button id="Search-Button" @mouseover="SearchHover" @mouseleave="SearchLeave">Search</button>
         </div>
 </template>
 
@@ -41,6 +41,9 @@ export default {
         methods: {
             SearchHover() {
                 TweenMax.to("#Search-Button", 0.5, { scaleX: 1.25, scaleY: 1.25, backgroundColor: "white", color: "teal", borderColor: "teal"})
+            },
+            SearchLeave() {
+                TweenMax.to("#Search-Button", 0.5, { scaleX: 1, scaleY: 1, backgroundColor: "teal", color: "white", borderColor: "transparent"})
             },
         }    
 }
@@ -144,6 +147,7 @@ input[type=checkbox]{
     width: 20%;
     height: 40px;
     border-color: transparent;
+    border-style: solid;
     margin: 60px 40%;
     outline: none;
 }
