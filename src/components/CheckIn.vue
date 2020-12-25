@@ -16,11 +16,13 @@
             </div>
             <input class="CheckIn-Input" type="text" placeholder="Travellers">
 
-            <label for="Flight-Check">Add a Flight</label>
-            <input type="checkbox" id="Flight-Check" name="Flight-Check"/>
+            <div id="CheckBox-Container">
+                <label for="Flight-Check">Add a Flight</label>
+                <input type="checkbox" id="Flight-Check" name="Flight-Check"/>
 
-            <label for="Flight-Check">Add a Rover</label>
-            <input type="checkbox" id="Rover-Check" name="Rover-Check"/>
+                <label for="Flight-Check">Add a Rover</label>
+                <input type="checkbox" id="Rover-Check" name="Rover-Check"/>
+            </div>
         </div>
 </template>
 
@@ -108,6 +110,13 @@ export default {
     border-style: solid;
     border-width: 2.5px; 
 }
+
+#CheckBox-Container{
+    margin: 10px 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 #Flight-Check{
     border-color: #dfe3e6;
