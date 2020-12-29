@@ -7,7 +7,7 @@
                 <p class="Safety-Tip-SubHeading">Learn how to find options with free cancellation or no change fees for your next trip.</p>
             </div>
             <div class="Safety-Tip">Be prepared
-                <p class="Safety-Tip-SubHeading"></p>
+                <p class="Safety-Tip-SubHeading">Stay informed about guidelines and restrictions in our Solar travel guide.</p>
             </div>
             <div class="Safety-Tip"></div>
         </div>
