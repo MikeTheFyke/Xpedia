@@ -3,7 +3,9 @@
         <h2 id="Safety-Title">Travel Safety during Solar Radiation</h2>
         <h1 id="Safety-SubTitle">Resources to help you travel smart, every step on the way</h1>
         <div id="Safety-Tips-Container">
-            <div class="Safety-Tip" id="Flexibility">Book with flexibility</div>
+            <div class="Safety-Tip" id="Flexibility">Book with flexibility
+                <p class="Safety-Tip-SubHeading">Learn how to find options with free cancellation or no change fees for your next trip.</p>
+            </div>
             <div class="Safety-Tip"></div>
             <div class="Safety-Tip"></div>
         </div>
@@ -66,6 +68,12 @@ export default {
     color: teal;
     font-family: "Montserrat";
     font-size: 20px;
+}
+
+.Safety-Tip-SubHeading{
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
 
 </style>
