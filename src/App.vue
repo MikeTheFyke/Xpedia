@@ -4,14 +4,16 @@
     <Header />
     <CheckIn />
     <Safety />
+    <TripIdeas />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Banner from './components/Banner.vue'
-import CheckIn from './components/CheckIn.vue'
-import Safety from './components/Safety.vue'
+import Header from './components/Header'
+import Banner from './components/Banner'
+import CheckIn from './components/CheckIn'
+import Safety from './components/Safety'
+import TripIdeas from './components/NextTripIdeas'
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     Banner,
     CheckIn,
     Safety,
+    TripIdeas,
   }
 }
 </script>
