@@ -9,7 +9,9 @@
             <div class="Safety-Tip">Be prepared
                 <p class="Safety-Tip-SubHeading">Stay informed about guidelines and restrictions in our Solar travel guide.</p>
             </div>
-            <div class="Safety-Tip"></div>
+            <div class="Safety-Tip">Manage your trip
+                <p class="Safety-Tip-SubHeading">Change or cancel a reservation and see refund timelines.</p>
+            </div>
         </div>
     </div>
 </template>
@@ -30,7 +32,7 @@ export default {
 #Safety-Container{
     width: 90%;
     height: 250px;
-    margin: 10px 5%;
+    margin: 40px 5%;
     background-color: transparent;
 }
 
