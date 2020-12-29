@@ -5,6 +5,7 @@
     <CheckIn />
     <Safety />
     <TripIdeas />
+    <SwitchRoutine />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Banner from './components/Banner'
 import CheckIn from './components/CheckIn'
 import Safety from './components/Safety'
 import TripIdeas from './components/NextTripIdeas'
+import SwitchRoutine from './components/SwitchRoutine'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     CheckIn,
     Safety,
     TripIdeas,
+    SwitchRoutine,
   }
 }
 </script>
