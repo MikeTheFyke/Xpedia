@@ -15,7 +15,9 @@
                 <p class="Ideas-Right-SubHeading">Book early and save</p>
             </div>
             <div id="Ideas-Right-Bottom">
-
+                <img src="../images/AstronautsOnMoon.jpg" class="IdeasRight-Image">
+                <h1 class="Ideas-Right-Heading">Last minute deals are available</h1>
+                <p class="Ideas-Right-SubHeading">Find your next getaway</p>
             </div>
         </div>
     </div>   
