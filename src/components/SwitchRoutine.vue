@@ -26,6 +26,13 @@
                     <h1 class="Routine-Heading">Ceres</h1>
                     <p class="Routine-SubHeading">597 vacation rentals</p>
                 </div>
+                <div class="Routine-Outter">
+                    <div class="Routine-Image-Div">
+                        <img src="../images/NasaVacationPosters/Earth.jpg" class="Routine-Image">
+                    </div>
+                    <h1 class="Routine-Heading">Earth</h1>
+                    <p class="Routine-SubHeading">1.1m vacation rentals</p>
+                </div>
         </div>
     </div>   
 </template>
