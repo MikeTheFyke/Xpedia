@@ -9,7 +9,12 @@
             </div>
         </div>
         <div id="Ideas-Right">
+            <div id="Ideas-Right-Top">
 
+            </div>
+            <div id="Ideas-Right-Bottom">
+
+            </div>
         </div>
     </div>   
 </template>
@@ -82,6 +87,28 @@ export default {
     width: 30%;
     height: 380px;
     margin: 10px;
+}
+
+#Ideas-Right-Top{
+    width: 100%;
+    height: 40%;
+    border-color: #dfe3e6;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#Ideas-Right-Bottom{
+    width: 100%;
+    height: 40%;
+    border-color: #dfe3e6;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
 }
 
 </style>
