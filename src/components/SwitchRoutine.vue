@@ -1,7 +1,7 @@
 <template>
     <div id="Routine-Container">
         <div id="Routine-Top">
-
+            <img src="../images/AstronautsOnMoon.jpg" id="SwitchRoutine-Image">
         </div>
         <div id="Routine-Bottom">
 
@@ -33,9 +33,12 @@ export default {
     width: 100%;
     height: 55%;
     border-radius: 15px;
-    border-color: #dfe3e6;
-    border-style: solid;
     overflow: hidden;
+}
+
+#SwitchRoutine-Image{
+    width: 100%;
+    height: 100%;
 }
 
 #Routine-Bottom{
