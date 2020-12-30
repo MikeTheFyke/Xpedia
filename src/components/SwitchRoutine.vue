@@ -5,6 +5,7 @@
             <h1 id="Routine-Heading">Switch up your <br>routine</h1>
         </div>
         <div id="Routine-Bottom">
+
                 <div class="Routine-Outter">
                     <div class="Routine-Image-Div">
                         <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
@@ -12,6 +13,7 @@
                     <h1 class="Routine-Heading">51 Pegasi-B</h1>
                     <p class="Routine-SubHeading">638 vacation rentals</p>
                 </div>
+
                 <div class="Routine-Outter">
                     <div class="Routine-Image-Div">
                         <img src="../images/NasaVacationPosters/55CancriE.jpg" class="Routine-Image">
@@ -19,13 +21,7 @@
                     <h1 class="Routine-Heading">55 Cancri-E</h1>
                     <p class="Routine-SubHeading">2035 vacation rentals</p>
                 </div>
-                <div class="Routine-Outter">
-                    <div class="Routine-Image-Div">
-                        <img src="../images/NasaVacationPosters/Ceres.jpg" class="Routine-Image">
-                    </div>
-                    <h1 class="Routine-Heading">Ceres</h1>
-                    <p class="Routine-SubHeading">597 vacation rentals</p>
-                </div>
+
                 <div class="Routine-Outter">
                     <div class="Routine-Image-Div">
                         <img src="../images/NasaVacationPosters/Earth.jpg" class="Routine-Image">
@@ -33,6 +29,15 @@
                     <h1 class="Routine-Heading">Earth</h1>
                     <p class="Routine-SubHeading">1.1m vacation rentals</p>
                 </div>
+
+                <div class="Routine-Outter">
+                    <div class="Routine-Image-Div">
+                        <img src="../images/NasaVacationPosters/Enceladus.jpg" class="Routine-Image">
+                    </div>
+                    <h1 class="Routine-Heading">Enceladus</h1>
+                    <p class="Routine-SubHeading">597 vacation rentals</p>
+                </div>
+
         </div>
     </div>   
 </template>
