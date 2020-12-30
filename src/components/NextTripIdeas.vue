@@ -4,6 +4,8 @@
             Ideas for your next trip
             <div id="Pet-Ideas">
                 <img src="../images/LaikaTheDog.jpg" id="Laika">
+                <h1 class="Ideas-Heading">Pet-friendly Shuttles</h1>
+                <p class="Ideas-SubHeading">Find a place where the whole family, including your pets, feel welcome.</p>
             </div>
         </div>
         <div id="Ideas-Right">
@@ -56,6 +58,22 @@ export default {
 #Laika{
     width: 100%;
     height: 80%;
+}
+
+.Ideas-Heading{
+    margin: 0;
+    margin-left: 10px;
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 20px;
+}
+
+.Ideas-SubHeading{
+    margin: 0;
+    margin-left: 10px;
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
 
 #Ideas-Right{
