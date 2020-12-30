@@ -12,6 +12,20 @@
                     <h1 class="Routine-Heading">51 Pegasi-B</h1>
                     <p class="Routine-SubHeading">638 vacation rentals</p>
                 </div>
+                <div class="Routine-Outter">
+                    <div class="Routine-Image-Div">
+                        <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
+                    </div>
+                    <h1 class="Routine-Heading">51 Pegasi-B</h1>
+                    <p class="Routine-SubHeading">638 vacation rentals</p>
+                </div>
+                <div class="Routine-Outter">
+                    <div class="Routine-Image-Div">
+                        <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
+                    </div>
+                    <h1 class="Routine-Heading">51 Pegasi-B</h1>
+                    <p class="Routine-SubHeading">638 vacation rentals</p>
+                </div>
         </div>
     </div>   
 </template>
@@ -66,6 +80,8 @@ export default {
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Routine-Outter{
