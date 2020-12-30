@@ -10,7 +10,9 @@
         </div>
         <div id="Ideas-Right">
             <div id="Ideas-Right-Top">
-
+                <img src="../images/AstronautsOnMars.jpg" class="IdeasRight-Image">
+                <h1 class="Ideas-Right-Heading">Book 60 days in advance for 20% off select stays</h1>
+                <p class="Ideas-Right-SubHeading">Book early and save</p>
             </div>
             <div id="Ideas-Right-Bottom">
 
@@ -100,6 +102,13 @@ export default {
     margin-top: 30px;
 }
 
+.IdeasRight-Image{
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
 #Ideas-Right-Bottom{
     width: 100%;
     height: 40%;
@@ -109,6 +118,19 @@ export default {
     border-radius: 15px;
     overflow: hidden;
     margin-top: 30px;
+}
+
+.Ideas-Right-Heading{
+    margin: 5%;
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 70%;
+}
+
+.Ideas-Right-SubHeading{
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 50%;
 }
 
 </style>
