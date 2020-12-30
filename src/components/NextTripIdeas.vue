@@ -39,8 +39,6 @@ export default {
     width: 90%;
     height: 400px;
     margin: 40px 5%;
-    border-color: #dfe3e6;
-    border-style: solid;
     display: flex;
     justify-content: space-evenly;
 }
