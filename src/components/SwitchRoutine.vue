@@ -64,15 +64,14 @@ export default {
     height: 55%;
     margin: 0 5%;
     border-radius: 15px;
-    border-color: #dfe3e6;
     background-color: white;
-    border-style: solid;
     overflow: hidden;
 }
 
 .Routine-Outter{
     width: 20vw;
     height: 100%;
+    margin: 10px;
 }
 
 .Routine-Image-Div{
@@ -83,14 +82,19 @@ export default {
 .Routine-Image{
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 
 .Routine-Heading{
-
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 20px;
 }
 
 .Routine-SubHeading{
-
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
 
 </style>
