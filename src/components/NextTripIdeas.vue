@@ -84,8 +84,6 @@ export default {
 }
 
 #Ideas-Right{
-    border-color: #dfe3e6;
-    border-style: solid;
     width: 30%;
     height: 380px;
     margin: 10px;
