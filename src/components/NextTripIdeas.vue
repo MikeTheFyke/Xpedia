@@ -3,7 +3,7 @@
         <div id="Ideas-Left">
             Ideas for your next trip
             <div id="Pet-Ideas">
-
+<img src="../images/LaikaTheDog.jpg">
             </div>
         </div>
         <div id="Ideas-Right">
