@@ -5,7 +5,13 @@
             <h1 id="Routine-Heading">Switch up your <br>routine</h1>
         </div>
         <div id="Routine-Bottom">
-
+                <div class="Routine-Outter">
+                    <div class="Routine-Image-Div">
+                        <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
+                    </div>
+                    <h1 class="Routine-Heading">51 Pegasi-B</h1>
+                    <p class="Routine-SubHeading">638 vacation rentals</p>
+                </div>
         </div>
     </div>   
 </template>
@@ -63,4 +69,28 @@ export default {
     border-style: solid;
     overflow: hidden;
 }
+
+.Routine-Outter{
+    width: 20vw;
+    height: 100%;
+}
+
+.Routine-Image-Div{
+    width: 100%;
+    height: 15vh;
+}
+
+.Routine-Image{
+    width: 100%;
+    height: 100%;
+}
+
+.Routine-Heading{
+
+}
+
+.Routine-SubHeading{
+
+}
+
 </style>
