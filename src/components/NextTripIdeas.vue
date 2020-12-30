@@ -3,7 +3,7 @@
         <div id="Ideas-Left">
             Ideas for your next trip
             <div id="Pet-Ideas">
-<img src="../images/LaikaTheDog.jpg">
+                <img src="../images/LaikaTheDog.jpg" id="Laika">
             </div>
         </div>
         <div id="Ideas-Right">
@@ -35,8 +35,6 @@ export default {
 }
 
 #Ideas-Left{
-    border-color: #dfe3e6;
-    border-style: solid;
     width: 60%;
     height: 380px;
     margin: 10px;
@@ -52,6 +50,12 @@ export default {
     border-style: solid;
     border-width: thin;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+#Laika{
+    width: 100%;
+    height: 80%;
 }
 
 #Ideas-Right{
