@@ -14,17 +14,17 @@
                 </div>
                 <div class="Routine-Outter">
                     <div class="Routine-Image-Div">
-                        <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
+                        <img src="../images/NasaVacationPosters/55CancriE.jpg" class="Routine-Image">
                     </div>
-                    <h1 class="Routine-Heading">51 Pegasi-B</h1>
-                    <p class="Routine-SubHeading">638 vacation rentals</p>
+                    <h1 class="Routine-Heading">55 Cancri-E</h1>
+                    <p class="Routine-SubHeading">2035 vacation rentals</p>
                 </div>
                 <div class="Routine-Outter">
                     <div class="Routine-Image-Div">
-                        <img src="../images/NasaVacationPosters/51PegasiB.jpg" class="Routine-Image">
+                        <img src="../images/NasaVacationPosters/Ceres.jpg" class="Routine-Image">
                     </div>
-                    <h1 class="Routine-Heading">51 Pegasi-B</h1>
-                    <p class="Routine-SubHeading">638 vacation rentals</p>
+                    <h1 class="Routine-Heading">Ceres</h1>
+                    <p class="Routine-SubHeading">597 vacation rentals</p>
                 </div>
         </div>
     </div>   
@@ -46,8 +46,6 @@ export default {
     width: 90%;
     height: 500px;
     margin: 40px 5%;
-    border-color: #dfe3e6;
-    border-style: solid;
 }
 
 #Routine-Top{
