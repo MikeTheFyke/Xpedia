@@ -2,6 +2,7 @@
     <div id="Routine-Container">
         <div id="Routine-Top">
             <img src="../images/AstronautsOnMoon.jpg" id="SwitchRoutine-Image">
+            <h1 id="Routine-Heading">Switch up your <br>routine</h1>
         </div>
         <div id="Routine-Bottom">
 
@@ -39,6 +40,15 @@ export default {
 #SwitchRoutine-Image{
     width: 100%;
     height: 100%;
+}
+
+#Routine-Heading{
+    position: relative;
+    top: -108%;
+    left: 22%;
+    font-family: "Montserrat";
+    font-size: 35px;
+    color: white;
 }
 
 #Routine-Bottom{
