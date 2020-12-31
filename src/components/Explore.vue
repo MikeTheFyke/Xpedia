@@ -47,11 +47,23 @@ export default {
 }
 
 .Explore-Sub{
-
+    position: relative;
+    top: -8vw;
+    margin: 0 10px;
+    width: 90%;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 3vw;
 }
 
-.Explore-Sub{
-    
+.Explore-SubSub{
+    position: relative;
+    top: -8vw;
+    margin: 0 10px;
+    width: 90%;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.5vw;
 }
 
 </style>
