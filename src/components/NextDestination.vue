@@ -2,11 +2,11 @@
     <div id="Destination-Container">
         <h1 id="Destination-Heading">Find your next destination</h1>
         <div id="Destinations-Container">
-            <div class="Destination"><img src="../images/NasaVacationPosters/Europa.jpg" class="Destination-Poster"></div>
-            <div class="Destination"><img src="../images/NasaVacationPosters/HD40307G.jpg" class="Destination-Poster"></div>
-            <div class="Destination"><img src="../images/NasaVacationPosters/Jupiter.jpg" class="Destination-Poster"></div>
-            <div class="Destination"><img src="../images/NasaVacationPosters/Kepler16B.jpg" class="Destination-Poster"></div>
-            <div class="Destination"><img src="../images/NasaVacationPosters/Mars.jpg" class="Destination-Poster"></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Europa.jpg" class="Destination-Poster"><h1 class="Destination-Poster-Heading">Europa</h1></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/HD40307G.jpg" class="Destination-Poster"><h1 class="Destination-Poster-Heading">HD40307G</h1></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Jupiter.jpg" class="Destination-Poster"><h1 class="Destination-Poster-Heading">Jupiter</h1></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Kepler16B.jpg" class="Destination-Poster"><h1 class="Destination-Poster-Heading">Kepler16B</h1></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Mars.jpg" class="Destination-Poster"><h1 class="Destination-Poster-Heading">Mars</h1></div>
         </div>
     </div>
 </template>
@@ -48,6 +48,17 @@ export default {
     height: 15vw;
     border-radius: 15px;
     overflow: hidden;
+}
+
+.Destination-Poster-Heading{
+    position: relative;
+    top: -10vw;
+    margin: 0 auto;
+    width: 90%;
+    margin: 0 15%;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2vw;
 }
 
  .Destination-Poster{
