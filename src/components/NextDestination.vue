@@ -1,6 +1,9 @@
 <template>
     <div id="Destination-Container">
         <h1 id="Destination-Heading">Find your next destination</h1>
+        <div id="Destinations-Container">
+
+        </div>
     </div>
 </template>
 
@@ -29,6 +32,14 @@ export default {
     font-family: "Montserrat";
     font-size: 20px;
     margin: 10px 10px;
+}
+
+#Destinations-Container{
+    width: 100%;
+    height: 250px;
+    border-color: #98a3a3;
+    border-style: solid;
+    border-width: thin;
 }
 
 </style>
