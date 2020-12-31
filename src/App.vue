@@ -6,6 +6,7 @@
     <Safety />
     <TripIdeas />
     <SwitchRoutine />
+    <NextDestination />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import CheckIn from './components/CheckIn'
 import Safety from './components/Safety'
 import TripIdeas from './components/NextTripIdeas'
 import SwitchRoutine from './components/SwitchRoutine'
+import NextDestination from './components/NextDestination'
 
 export default {
   name: 'App',
@@ -26,6 +28,7 @@ export default {
     Safety,
     TripIdeas,
     SwitchRoutine,
+    NextDestination,
   }
 }
 </script>
