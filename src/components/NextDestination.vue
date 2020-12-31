@@ -2,7 +2,11 @@
     <div id="Destination-Container">
         <h1 id="Destination-Heading">Find your next destination</h1>
         <div id="Destinations-Container">
-
+            <div class="Destination"><img src="../images/NasaVacationPosters/Europa.jpg" class="Destination-Poster"></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/HD40307G.jpg" class="Destination-Poster"></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Jupiter.jpg" class="Destination-Poster"></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Kepler16B.jpg" class="Destination-Poster"></div>
+            <div class="Destination"><img src="../images/NasaVacationPosters/Mars.jpg" class="Destination-Poster"></div>
         </div>
     </div>
 </template>
@@ -21,9 +25,7 @@ export default {
 
 #Destination-Container{
     width: 90%;
-    height: 350px;
-    border-color: #98a3a3;
-    border-style: solid;
+    height: 25vw;
     margin: 10px 5%;
 }
 
@@ -36,10 +38,22 @@ export default {
 
 #Destinations-Container{
     width: 100%;
-    height: 250px;
-    border-color: #98a3a3;
-    border-style: solid;
-    border-width: thin;
+    height: 15vw;
+    display: flex;
+    justify-content: space-between;
 }
+
+.Destination{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+ .Destination-Poster{
+     width: 100%;
+     height: 100%;
+     opacity: 0.5;
+ }
 
 </style>
