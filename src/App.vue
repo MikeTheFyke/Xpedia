@@ -7,6 +7,7 @@
     <TripIdeas />
     <SwitchRoutine />
     <NextDestination />
+    <Explore />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Safety from './components/Safety'
 import TripIdeas from './components/NextTripIdeas'
 import SwitchRoutine from './components/SwitchRoutine'
 import NextDestination from './components/NextDestination'
+import Explore from './components/Explore'
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     TripIdeas,
     SwitchRoutine,
     NextDestination,
+    Explore,
   }
 }
 </script>
