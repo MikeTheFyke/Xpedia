@@ -1,6 +1,6 @@
 <template>
     <div id="Destination-Container">
-
+        <h1 id="Destination-Heading">Find your next destination</h1>
     </div>
 </template>
 
@@ -22,6 +22,13 @@ export default {
     border-color: #98a3a3;
     border-style: solid;
     margin: 10px 5%;
+}
+
+#Destination-Heading{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin: 10px 10px;
 }
 
 </style>
