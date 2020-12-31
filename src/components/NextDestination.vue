@@ -55,16 +55,16 @@ export default {
     top: -10vw;
     margin: 0 auto;
     width: 90%;
-    margin: 0 15%;
     color: white;
     font-family: "Montserrat";
     font-size: 2vw;
+    text-align: center;
 }
 
  .Destination-Poster{
      width: 100%;
      height: 100%;
-     opacity: 0.5;
+     filter: brightness(50%);
  }
 
 </style>
