@@ -1,7 +1,10 @@
 <template>
     <div id="Explore-Container">
+        <h1 id="Explore-Heading">Explore, discover and save</h1>
         <div id="Explore-Poster">
             <img src="../images/saturn-surface.png" id="Explore-Banner"/>
+            <h1 class="Explore-Sub">Flexible hotel deals</h1>
+            <h2 class="Explore-SubSub">Because flexibility matters.</h2>
         </div>
     </div>
 </template>
@@ -24,6 +27,13 @@ export default {
     margin: 10px 5%;
 }
 
+ #Explore-Heading{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin: 10px 0;
+ }
+
 #Explore-Poster{
     width:100%;
     height: 300px;
@@ -34,6 +44,14 @@ export default {
 #Explore-Banner{
     width: 100%;
     height: 100%;
+}
+
+.Explore-Sub{
+
+}
+
+.Explore-Sub{
+    
 }
 
 </style>

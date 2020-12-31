@@ -33,7 +33,7 @@ export default {
     color: teal;
     font-family: "Montserrat";
     font-size: 20px;
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 
 #Destinations-Container{
