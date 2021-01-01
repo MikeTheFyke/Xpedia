@@ -57,9 +57,12 @@ export default {
 }
 
 #Footer-Link-Container{
-    width: 100%;
+    width: 80%;
+    margin: 10px 10%;
     height: 50px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .Footer-Links{
