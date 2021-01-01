@@ -17,7 +17,11 @@ export default {
 <style scoped>
 
 #Help-Container{
-
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #dfe3e6;
+    border-style: solid;
 }
 
 </style>
