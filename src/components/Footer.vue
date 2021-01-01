@@ -18,6 +18,7 @@
         <div id="Press-Container">
             <h1 id="Press-Text">Xpedia.ca is represented in Quebec by Tour The Stars Holidays (Canada) Inc a Quebec licensee. Xpedia Inc is not responsible for content on external Web sites.</h1>
         </div>
+        <div id="External-Image-Link"></div>
     </div>
 </template>
 
@@ -75,8 +76,8 @@ export default {
 }
 
 #Press-Container{
-    width: 80%;
-    margin: 20px 10%;
+    width: 70%;
+    margin: 20px 15% 0 15%;
     height: 20px;
     text-align: center;
 }
@@ -85,6 +86,14 @@ export default {
     color: #98a3a3;
     font-family: "Montserrat";
     font-size: 12px;
+}
+
+#External-Image-Link{
+    width: 10%;
+    height: 20%;
+    margin: 40px 45% 0px 45%;
+    background-color: teal;
+    border-radius: 15px;
 }
 
 </style>
