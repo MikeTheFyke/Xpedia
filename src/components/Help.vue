@@ -56,9 +56,9 @@ export default {
     right: 30px;
     width: 400px;
     height: 600px;
-    border-style: solid;
-    border-color: teal;
     border-radius: 15px;
+    background-color: white;
+    box-shadow: 2px 6px 10px 0px #dfe3e6;
 }
 
 </style>
