@@ -107,7 +107,9 @@ export default {
 }
 
 #Footer-Copyright-Text{
-
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
 
 </style>
