@@ -99,4 +99,11 @@ export default {
     border-radius: 15px;
 }
 
+#Footer-Copyright{
+    width: 70%;
+    margin: 20px 15% 0 15%;
+    height: 20px;
+    text-align: center;
+}
+
 </style>
