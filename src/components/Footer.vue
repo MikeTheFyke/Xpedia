@@ -20,7 +20,7 @@
         </div>
         <div id="External-Image-Link"></div>
         <div id="Footer-Copyright">
-
+            <h1 id="Footer-Copyright-Text">2020 Xpedia Inc and Xpedia Group Company. All rights reserved.</h1>
         </div>
     </div>
 </template>
@@ -104,6 +104,10 @@ export default {
     margin: 20px 15% 0 15%;
     height: 20px;
     text-align: center;
+}
+
+#Footer-Copyright-Text{
+
 }
 
 </style>
