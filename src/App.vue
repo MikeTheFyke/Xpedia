@@ -9,6 +9,7 @@
     <NextDestination />
     <Explore />
     <Footer />
+    <Help />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import SwitchRoutine from './components/SwitchRoutine'
 import NextDestination from './components/NextDestination'
 import Explore from './components/Explore'
 import Footer from './components/Footer'
+import Help from './components/Help'
 
 export default {
   name: 'App',
@@ -35,6 +37,7 @@ export default {
     NextDestination,
     Explore,
     Footer,
+    Help,
   }
 }
 </script>
