@@ -23,9 +23,8 @@ export default {
     width: 100px;
     height: 40px;
     border-radius: 20px;
-    border-color: #dfe3e6;
-    border-style: solid;
     background-color: white;
+    box-shadow: 2px 6px 10px 0px #dfe3e6;
 }
 
 </style>
