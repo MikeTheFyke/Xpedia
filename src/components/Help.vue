@@ -80,6 +80,9 @@ export default {
 }
 
 #Help-Close{
+    position: inherit;
+    top: 0px;
+    right: 0px;
     height: 30px;
     width: 30px;
     border-color: teal;
