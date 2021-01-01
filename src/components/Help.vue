@@ -1,6 +1,7 @@
 <template>
     <div id="Help-Container">
         <div id="Help-Image"></div>
+        <h1 id="Help-Text">Help</h1>
     </div>
 </template>
 
@@ -26,13 +27,22 @@ export default {
     background-color: white;
     box-shadow: 2px 6px 10px 0px #dfe3e6;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #Help-Image{
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     border-radius: 5px;
     background-color: teal;
+    margin: 10px 0px 0px 5px;
 }
+
+#Help-Text{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 16px;
+    margin-right: 5px;
+}
+
 </style>
