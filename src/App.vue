@@ -8,6 +8,7 @@
     <SwitchRoutine />
     <NextDestination />
     <Explore />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import TripIdeas from './components/NextTripIdeas'
 import SwitchRoutine from './components/SwitchRoutine'
 import NextDestination from './components/NextDestination'
 import Explore from './components/Explore'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
@@ -32,6 +34,7 @@ export default {
     SwitchRoutine,
     NextDestination,
     Explore,
+    Footer,
   }
 }
 </script>
