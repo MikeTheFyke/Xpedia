@@ -1,6 +1,6 @@
 <template>
     <div id="Help-Container">
-
+        <div id="Help-Image"></div>
     </div>
 </template>
 
@@ -25,6 +25,14 @@ export default {
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 6px 10px 0px #dfe3e6;
+    display: flex;
+    justify-content: space-between;
 }
 
+#Help-Image{
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: teal;
+}
 </style>
