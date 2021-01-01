@@ -16,4 +16,11 @@ export default {
 
 <style scoped>
 
+#Footer-Container{
+    height: 500px;
+    width: 100%;
+    border-color: #98a3a3;
+    border-style: solid;
+}
+
 </style>
