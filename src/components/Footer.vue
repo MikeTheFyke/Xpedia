@@ -37,10 +37,12 @@ export default {
 }
 
 #Options-Link{
-    color: teal;
+    color: #98a3a3;
     font-family: "Montserrat";
     font-size: 12px;
     outline: none;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 </style>
