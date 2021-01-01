@@ -5,7 +5,15 @@
             <a href="" id="Options-Link">See our travel options</a>
         </div>
         <div id="Footer-Link-Container">
-
+            <a href="" class="Footer-Links">About US</a>
+            <a href="" class="Footer-Links">Advertising</a>
+            <a href="" class="Footer-Links">Newsroom</a>
+            <a href="" class="Footer-Links">Jobs</a>
+            <a href="" class="Footer-Links">Privacy & Security</a>
+            <a href="" class="Footer-Links">Terms Of Use</a>
+            <a href="" class="Footer-Links">Investor Relations</a>
+            <a href="" class="Footer-Links">Travel Blog</a>
+            <a href="" class="Footer-Links">Support</a>
         </div>
     </div>
 </template>
@@ -52,6 +60,12 @@ export default {
     width: 100%;
     height: 50px;
     text-align: center;
+}
+
+.Footer-Links{
+    color: #98a3a3;
+    font-family: "Montserrat";
+    font-size: 12px;
 }
 
 </style>
