@@ -5,7 +5,9 @@
             <h1 id="Help-Text">Help</h1>
         </div>
         <div id="Help-Window">
-
+            <div id="Help-Header">
+                <h1 id="Help-Header-Heading">How can we help?</h1>
+            </div>
         </div>
     </div>
 </template>
@@ -59,6 +61,20 @@ export default {
     border-radius: 15px;
     background-color: white;
     box-shadow: 2px 6px 10px 0px #dfe3e6;
+    overflow: hidden;
 }
 
+#Help-Header{
+    width: 100%;
+    height: 50px;
+    background-color: #e3c624;
+}
+
+#Help-Header-Heading{
+    width: 70%;
+    margin: 0px 30% 0 30%;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 16px;
+}
 </style>
