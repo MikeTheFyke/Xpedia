@@ -19,8 +19,8 @@ export default {
 
 #Help-Container{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     width: 100px;
     height: 40px;
     border-radius: 20px;
