@@ -19,6 +19,9 @@
             <h1 id="Press-Text">Xpedia.ca is represented in Quebec by Tour The Stars Holidays (Canada) Inc a Quebec licensee. Xpedia Inc is not responsible for content on external Web sites.</h1>
         </div>
         <div id="External-Image-Link"></div>
+        <div id="Footer-Copyright">
+
+        </div>
     </div>
 </template>
 
