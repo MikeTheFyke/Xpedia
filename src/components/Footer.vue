@@ -21,6 +21,7 @@
         <div id="External-Image-Link"></div>
         <div id="Footer-Copyright">
             <h1 id="Footer-Copyright-Text">2020 Xpedia Inc and Xpedia Group Company. All rights reserved.</h1>
+            <a href="/" id="XpediaGroup-Link">Xpedia group</a>
         </div>
     </div>
 </template>
@@ -110,6 +111,15 @@ export default {
     color: #98a3a3;
     font-family: "Montserrat";
     font-size: 12px;
+}
+
+#XpediaGroup-Link{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 24px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 </style>
