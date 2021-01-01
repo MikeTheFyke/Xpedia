@@ -7,6 +7,7 @@
         <div id="Help-Window">
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
+                <div id="Help-Close"></div>
             </div>
         </div>
     </div>
@@ -72,9 +73,18 @@ export default {
 
 #Help-Header-Heading{
     width: 70%;
-    margin: 0px 30% 0 30%;
+    margin: 0 30% 0 30%;
     color: black;
     font-family: "Montserrat";
     font-size: 16px;
+}
+
+#Help-Close{
+    height: 30px;
+    width: 30px;
+    border-color: teal;
+    border-radius: 5px;
+    border-style: solid;
+    float: right;
 }
 </style>
