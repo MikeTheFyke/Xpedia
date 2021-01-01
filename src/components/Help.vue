@@ -1,7 +1,12 @@
 <template>
-    <div id="Help-Container">
-        <div id="Help-Image"></div>
-        <h1 id="Help-Text">Help</h1>
+    <div>
+        <div id="Help-Container">
+            <div id="Help-Image"></div>
+            <h1 id="Help-Text">Help</h1>
+        </div>
+        <div id="Help-Window">
+
+        </div>
     </div>
 </template>
 
@@ -43,6 +48,17 @@ export default {
     font-family: "Montserrat";
     font-size: 16px;
     margin-right: 5px;
+}
+
+#Help-Window{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    width: 400px;
+    height: 600px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 15px;
 }
 
 </style>
