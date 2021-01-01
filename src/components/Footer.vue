@@ -4,6 +4,9 @@
             <h1 id="Options-Header">Explore a world of travel with Xpedia</h1>
             <a href="" id="Options-Link">See our travel options</a>
         </div>
+        <div id="Footer-Link-Container">
+
+        </div>
     </div>
 </template>
 
@@ -43,6 +46,12 @@ export default {
     outline: none;
     text-decoration: none;
     cursor: pointer;
+}
+
+#Footer-Link-Container{
+    width: 100%;
+    height: 50px;
+    text-align: center;
 }
 
 </style>
