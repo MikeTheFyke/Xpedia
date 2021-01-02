@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="Help-Container">
+        <div id="Help-Container" v-on:click="expand">
             <div id="Help-Image"></div>
             <h1 id="Help-Text">Help</h1>
         </div>
@@ -27,6 +27,9 @@ export default {
 
     },
     methods:{
+        expand(){
+            TweenMax.to("#Help-Window", 0, {opacity:1, zIndex: 5})
+        }
     }    
 }
 </script>
