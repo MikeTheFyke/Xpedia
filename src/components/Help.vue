@@ -20,6 +20,7 @@ export default {
     name: 'Help',
     data(){
         return{
+            clicked: false,
         }
     },
         mounted: function(){
@@ -28,7 +29,13 @@ export default {
     },
     methods:{
         expand(){
-            TweenMax.to("#Help-Window", 0, {opacity:1, zIndex: 5})
+                if (this.clicked === false){
+                    TweenMax.to("#Help-Window", 0.25, { opacity:1, zIndex: 5 })
+                    this.clicked = true
+                } else {
+                    TweenMax.to("#Help-Window", 0.25, { opacity:0, zIndex: -1 })
+                    this.clicked = false
+                }
         }
     }    
 }
