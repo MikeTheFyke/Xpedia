@@ -89,5 +89,6 @@ export default {
     color: black;
     font-family: "Montserrat";
     font-size: 18px;
+    cursor: pointer;
 }
 </style>
