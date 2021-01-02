@@ -128,7 +128,11 @@ export default {
 }
 
 #Submit-Input{
-
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 16px;
+    background-color: transparent;
+    border-style: none;
 }
 
 </style>
