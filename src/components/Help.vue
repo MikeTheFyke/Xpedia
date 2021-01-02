@@ -66,14 +66,14 @@ export default {
 }
 
 #Help-Header{
+    position: absolute;
+    top: 0px;
     width: 100%;
     height: 50px;
     background-color: #e3c624;
 }
 
 #Help-Header-Heading{
-    width: 70%;
-    margin: 0 30% 0 30%;
     color: black;
     font-family: "Montserrat";
     font-size: 16px;
