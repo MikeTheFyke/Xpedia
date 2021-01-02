@@ -7,7 +7,7 @@
         <div id="Help-Window">
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
-                <div id="Help-Close"></div>
+                <div id="Help-Close">X</div>
             </div>
         </div>
     </div>
@@ -71,6 +71,7 @@ export default {
     width: 100%;
     height: 50px;
     background-color: #e3c624;
+    text-align: center;
 }
 
 #Help-Header-Heading{
@@ -81,10 +82,10 @@ export default {
 
 #Help-Close{
     position: inherit;
-    top: 0px;
-    right: 0px;
-    height: 30px;
-    width: 30px;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
     border-color: teal;
     border-radius: 5px;
     border-style: solid;
