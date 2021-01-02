@@ -9,6 +9,10 @@
                 <h1 id="Help-Header-Heading">How can we help?</h1>
                 <div id="Help-Close" v-on:click="expand">X</div>
             </div>
+            <div id="Message-Input">
+                <input type="text" placeholder="Please enter your message">
+                <input type="submit">
+            </div>
         </div>
     </div>
 </template>
@@ -111,4 +115,9 @@ export default {
     font-size: 18px;
     cursor: pointer;
 }
+
+#Message-Input{
+
+}
+
 </style>
