@@ -86,6 +86,9 @@ export default {
     right: 10px;
     height: 20px;
     width: 20px;
+    color: black;
+    font-family: "Montserrat";
+    font-size: 18px;
     border-color: teal;
     border-radius: 5px;
     border-style: solid;
