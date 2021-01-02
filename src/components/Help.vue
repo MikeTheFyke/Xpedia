@@ -7,7 +7,7 @@
         <div id="Help-Window">
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
-                <div id="Help-Close">X</div>
+                <div id="Help-Close" v-on:click="expand">X</div>
             </div>
         </div>
     </div>
@@ -31,9 +31,11 @@ export default {
         expand(){
                 if (this.clicked === false){
                     TweenMax.to("#Help-Window", 0.25, { opacity:1, zIndex: 5 })
+                    TweenMax.to("#Help-Container", 0.25, { y: "10vh", opacity: 0})
                     this.clicked = true
                 } else {
                     TweenMax.to("#Help-Window", 0.25, { opacity:0, zIndex: -1 })
+                    TweenMax.to("#Help-Container", 0.25, { y: 0, opacity: 1})
                     this.clicked = false
                 }
         }
