@@ -124,15 +124,27 @@ export default {
 }
 
 #Text-Input{
+ width: 80%;
+ height: 20px;
+ outline: none;
+ margin-left: 2%;
+ border-radius: 5px;
+ border-color: #dfe3e6;
+ border-style: solid;
+}
 
+#Text-Input::placeholder{
+    color: #dfe3e6;
 }
 
 #Submit-Input{
+    width: 15%;
     color: teal;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 20px;
     background-color: transparent;
     border-style: none;
+    outline: none;
 }
 
 </style>
