@@ -14,11 +14,19 @@
 </template>
 
 <script>
+import TweenMax  from 'gsap';
+
 export default {
     name: 'Help',
     data(){
         return{
         }
+    },
+        mounted: function(){
+        TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1})
+
+    },
+    methods:{
     }    
 }
 </script>
