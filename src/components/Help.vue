@@ -10,8 +10,8 @@
                 <div id="Help-Close" v-on:click="expand">X</div>
             </div>
             <div id="Message-Input">
-                <input type="text" placeholder="Please enter your message">
-                <input type="submit">
+                <input id="Text-Input" type="text" placeholder="Please enter your message">
+                <input id="Submit-Input" type="submit" value=">">
             </div>
         </div>
     </div>
@@ -121,6 +121,14 @@ export default {
     bottom: 0px;
     width: 100%;
     height: 50px;
+}
+
+#Text-Input{
+
+}
+
+#Submit-Input{
+
 }
 
 </style>
