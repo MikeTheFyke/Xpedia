@@ -7,6 +7,9 @@
         <div id="Help-Window">
             <div id="Help-Conversation-Container">
                 <h1 id="Help-Conversation-Text"></h1>
+                <ul id="My-Conversation">
+
+                </ul>
             </div>
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
@@ -58,8 +61,11 @@ export default {
         messageAdd(){
             this.message = document.getElementById('Text-Input').value;
             console.log(this.message)
+
+            var node = document.createElement("LI");
             var NewMessage = document.createTextNode(this.message)
-            document.getElementById("Help-Conversation-Container").appendChild(NewMessage)
+            node.appendChild(NewMessage)
+            document.getElementById("My-Conversation").appendChild(node)
             document.getElementById('Text-Input').value = ""
         }
     }    
@@ -171,6 +177,9 @@ export default {
     top: 50px;
     width: 100%;
     text-align: center;
+    color: #b3b1ab;
+    font-family: "Montserrat";
+    font-size: 10px;
 }
 
 #Help-Conversation-Text{
