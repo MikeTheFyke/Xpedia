@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="Help-Container" v-on:click="expand">
+        <div id="Help-Container" v-on:click="expand" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">
             <div id="Help-Image"></div>
             <h1 id="Help-Text">Help</h1>
         </div>
@@ -42,6 +42,12 @@ export default {
                     TweenMax.to("#Help-Container", 0.25, { y: 0, opacity: 1})
                     this.clicked = false
                 }
+        },
+        buttonPopUp(){
+            TweenMax.to("#Help-Container", 0.25, { scale:1.5 })
+        },
+        buttonUnPop(){
+            TweenMax.to("#Help-Container", 0.25, { scale:1 })
         }
     }    
 }
