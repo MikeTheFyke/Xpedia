@@ -6,7 +6,7 @@
         </div>
         <div id="Help-Window">
             <div id="Help-Conversation-Container">
-                <h1 class="Help-Conversation-Text">Yesterday</h1>
+                <h1 id="Help-Conversation-Text"></h1>
             </div>
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
@@ -31,7 +31,8 @@ export default {
         }
     },
         mounted: function(){
-        TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1})
+        TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1});
+        document.getElementById('Help-Conversation-Text').innerText = Date.now();
 
     },
     methods:{
