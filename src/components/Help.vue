@@ -14,7 +14,7 @@
             </div>
             <div id="Message-Input">
                 <input id="Text-Input" type="text" placeholder="Please enter your message">
-                <input id="Submit-Input" type="submit" value=">">
+                <input id="Submit-Input" type="submit" value=">" v-on:click="messageAdd">
             </div>
         </div>
     </div>
@@ -29,6 +29,7 @@ export default {
         return{
             clicked: false,
             date: new Date(),
+            message: "",
         }
     },
         mounted: function(){
@@ -53,6 +54,10 @@ export default {
         },
         buttonUnPop(){
             TweenMax.to("#Help-Container", 0.25, { scale:1 })
+        },
+        messageAdd(){
+            this.message = document.getElementById('Text-Input').value;
+            console.log(this.message)
         }
     }    
 }
