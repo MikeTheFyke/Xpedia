@@ -5,6 +5,9 @@
             <h1 id="Help-Text">Help</h1>
         </div>
         <div id="Help-Window">
+            <div id="Help-Conversation-Container">
+                <h1>Yesterday</h1>
+            </div>
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
                 <div id="Help-Close" v-on:click="expand">X</div>
