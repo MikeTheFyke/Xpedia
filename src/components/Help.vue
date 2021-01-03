@@ -32,7 +32,7 @@ export default {
     },
         mounted: function(){
         TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1});
-        document.getElementById('Help-Conversation-Text').innerText = Date.now();
+        document.getElementById('Help-Conversation-Text').innerText = new Date();
 
     },
     methods:{
