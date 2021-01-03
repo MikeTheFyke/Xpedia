@@ -6,7 +6,7 @@
         </div>
         <div id="Help-Window">
             <div id="Help-Conversation-Container">
-                <h1>Yesterday</h1>
+                <h1 class="Help-Conversation-Text">Yesterday</h1>
             </div>
             <div id="Help-Header">
                 <h1 id="Help-Header-Heading">How can we help?</h1>
@@ -154,6 +154,13 @@ export default {
     background-color: transparent;
     border-style: none;
     outline: none;
+}
+
+#Help-Conversation-Container{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 </style>
