@@ -58,6 +58,9 @@ export default {
         messageAdd(){
             this.message = document.getElementById('Text-Input').value;
             console.log(this.message)
+            var NewMessage = document.createTextNode(this.message)
+            document.getElementById("Help-Conversation-Container").appendChild(NewMessage)
+            document.getElementById('Text-Input').value = ""
         }
     }    
 }
