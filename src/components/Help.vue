@@ -28,11 +28,12 @@ export default {
     data(){
         return{
             clicked: false,
+            date: new Date(),
         }
     },
         mounted: function(){
         TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1});
-        document.getElementById('Help-Conversation-Text').innerText = new Date();
+        document.getElementById('Help-Conversation-Text').innerText = this.date.toDateString();
 
     },
     methods:{
@@ -159,9 +160,14 @@ export default {
 
 #Help-Conversation-Container{
     position: absolute;
-    top: 30px;
+    top: 50px;
     width: 100%;
     text-align: center;
 }
 
+#Help-Conversation-Text{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 10px;
+}
 </style>
