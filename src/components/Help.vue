@@ -8,7 +8,6 @@
             <div id="Help-Conversation-Container">
                 <h1 id="Help-Conversation-Text"></h1>
                 <ul id="My-Conversation">
-
                 </ul>
             </div>
             <div id="Help-Header">
@@ -176,7 +175,6 @@ export default {
     position: absolute;
     top: 50px;
     width: 100%;
-    text-align: center;
     color: #b3b1ab;
     font-family: "Montserrat";
     font-size: 10px;
@@ -185,6 +183,21 @@ export default {
 #Help-Conversation-Text{
     color: teal;
     font-family: "Montserrat";
-    font-size: 10px;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 35% 0 35%;
 }
+
+#My-Conversation{
+    color: black;
+    font-family: "Montserrat";
+    font-size: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#My-Conversation li{
+}
+
 </style>
