@@ -15,7 +15,7 @@
                 <div id="Help-Close" v-on:click="expand">X</div>
             </div>
             <div id="Message-Input">
-                <input id="Text-Input" type="text" placeholder="Please enter your message">
+                <input id="Text-Input" type="text" placeholder="Please enter your message" @keyup.enter="messageAdd">
                 <input id="Submit-Input" type="submit" value=">" v-on:click="messageAdd">
             </div>
         </div>
@@ -58,15 +58,15 @@ export default {
             TweenMax.to("#Help-Container", 0.25, { scale:1 })
         },
         messageAdd(){
-            this.message = document.getElementById('Text-Input').value;
+            this.message = document.getElementById("Text-Input").value;
             console.log(this.message)
 
             var node = document.createElement("LI");
             var NewMessage = document.createTextNode(this.message)
             node.appendChild(NewMessage)
             document.getElementById("My-Conversation").appendChild(node)
-            document.getElementById('Text-Input').value = ""
-        }
+            document.getElementById("Text-Input").value = ""
+        },
     }    
 }
 </script>
@@ -193,11 +193,8 @@ export default {
     font-family: "Montserrat";
     font-size: 10px;
     list-style-type: none;
-    margin: 0;
+    margin: 10px 10px 10px 10px;
     padding: 0;
-}
-
-#My-Conversation li{
 }
 
 </style>
