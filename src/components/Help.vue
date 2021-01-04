@@ -32,6 +32,7 @@ export default {
             clicked: false,
             date: new Date(),
             message: "",
+            newMessage: "",
         }
     },
         mounted: function(){
@@ -60,9 +61,11 @@ export default {
         messageAdd(){
             this.message = document.getElementById("Text-Input").value;
             console.log(this.message)
+            this.newMessage = this.date.toLocaleTimeString() + " - " + this.message;
+            console.log(this.newMessage)
 
             var node = document.createElement("LI");
-            var NewMessage = document.createTextNode(this.message)
+            var NewMessage = document.createTextNode(this.newMessage)
             node.appendChild(NewMessage)
             document.getElementById("My-Conversation").appendChild(node)
             document.getElementById("Text-Input").value = ""
