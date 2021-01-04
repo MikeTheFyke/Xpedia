@@ -59,6 +59,7 @@ export default {
             TweenMax.to("#Help-Container", 0.25, { scale:1 })
         },
         messageAdd(){
+            this.date = new Date();
             this.message = document.getElementById("Text-Input").value;
             console.log(this.message)
             this.newMessage = this.date.toLocaleTimeString() + " - " + this.message;
