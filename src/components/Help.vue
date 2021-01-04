@@ -47,6 +47,7 @@ export default {
                     TweenMax.to("#Help-Container", 0.25, { y: "10vh", opacity: 0})
                     this.clicked = true
                 } else {
+                    document.getElementById('Text-Input').blur()
                     TweenMax.to("#Help-Window", 0.25, { opacity:0, zIndex: -1 })
                     TweenMax.to("#Help-Container", 0.25, { y: 0, opacity: 1})
                     this.clicked = false
