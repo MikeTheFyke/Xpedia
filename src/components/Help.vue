@@ -38,11 +38,11 @@ export default {
         mounted: function(){
         TweenMax.to("#Help-Window", 0, {opacity:0, zIndex: -1});
         document.getElementById('Help-Conversation-Text').innerText = this.date.toDateString();
-
     },
     methods:{
         expand(){
                 if (this.clicked === false){
+                    document.getElementById('Text-Input').focus()
                     TweenMax.to("#Help-Window", 0.25, { opacity:1, zIndex: 5 })
                     TweenMax.to("#Help-Container", 0.25, { y: "10vh", opacity: 0})
                     this.clicked = true
