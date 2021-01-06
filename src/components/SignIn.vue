@@ -4,6 +4,7 @@
         <div id="SignIn-DropDown">
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
             <button id="SignIn-Button" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">Sign in</button>
+            <a href="">Create a free account</a>
         </div>
 </div>
     
