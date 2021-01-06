@@ -4,7 +4,7 @@
         <div id="SignIn-DropDown">
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
             <button id="SignIn-Button" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">Sign in</button>
-            <a href="">Create a free account</a>
+            <a href="" id="Register-Link">Create a free account</a>
         </div>
 </div>
     
@@ -33,10 +33,10 @@ export default {
                 }
             },
             buttonPopUp() {
-                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1.05, scaleY: 1.05, backgroundColor: "white", color: "#099be3", borderStyle: "solid", borderColor: "#099be3", ease: "Linear.easeInOut" });
+                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1.05, scaleY: 1.05, backgroundColor: "white", color: "teal", borderStyle: "solid", borderColor: "#099be3", ease: "Linear.easeInOut" });
             },
             buttonUnPop() {
-                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1, scaleY: 1, backgroundColor: "#099be3", color: "white", ease: "Linear.easeInOut" });
+                TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1, scaleY: 1, backgroundColor: "teal", color: "white", ease: "Linear.easeInOut" });
             }
     }
 }
@@ -80,7 +80,7 @@ export default {
     height: 40px;
     border-radius: 10px;
     border-style: none;
-    background-color: #099be3;
+    background-color: teal;
     color: white;
     font-family:"Montserrat";
     font-size: 20px;
@@ -90,6 +90,13 @@ export default {
     #SignIn-Link{
     display: none;
     }
+}
+
+#Register-Link{
+    color: teal;
+    font-family:"Montserrat";
+    font-size: 20px;
+    text-decoration: none;
 }
 
 </style>
