@@ -5,6 +5,8 @@
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
             <button id="SignIn-Button" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">Sign in</button>
             <a href="" id="Register-Link">Create a free account</a>
+            <button class="Extras-Buttons" id="Favorites-Button">List of favorites</button>
+            <button class="Extras-Buttons" id="Rewards-Button">Xpedia Rewards</button>
         </div>
 </div>
     
@@ -65,14 +67,14 @@ export default {
     border-radius: 10px;
     box-shadow: 10px 8px 8px 10px #e1e3e6;
     padding: 10px;
-    text-align: center;
     background-color: white;
 }
 
 #DropDown-Title{
-    color: black;
+    color: #40574d;
     font-family:"Montserrat";
     font-size: 20px;
+    margin: 10px 5%;
 }
 
 #SignIn-Button{
@@ -84,6 +86,7 @@ export default {
     color: white;
     font-family:"Montserrat";
     font-size: 20px;
+    margin: 10px 5%;
 }
 
 @media only screen and (max-width: 700px){
@@ -97,6 +100,17 @@ export default {
     font-family:"Montserrat";
     font-size: 20px;
     text-decoration: none;
+    margin: 10px 25%;
+}
+
+.Extras-Buttons{
+    width: 100%;
+    height: 20px;
+    color: teal;
+    font-family:"Montserrat";
+    font-size: 15px;
+    border-color: transparent;
+    background-color: transparent;
 }
 
 </style>
