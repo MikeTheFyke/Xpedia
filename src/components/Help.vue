@@ -71,6 +71,7 @@ export default {
             node.appendChild(NewMessage)
             document.getElementById("My-Conversation").appendChild(node)
             document.getElementById("Text-Input").value = ""
+            
         },
     }    
 }
@@ -89,6 +90,7 @@ export default {
     box-shadow: 2px 6px 10px 0px #dfe3e6;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 #Help-Image{
@@ -174,6 +176,7 @@ export default {
     background-color: transparent;
     border-style: none;
     outline: none;
+    cursor: pointer;
 }
 
 #Help-Conversation-Container{

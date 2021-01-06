@@ -24,10 +24,10 @@ export default {
         methods: {
             expand() {
                 if (this.clicked === false){
-                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 1, opacity: 1, delay: 1, transformOrigin: "50% 0%" })
+                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 1, opacity: 1, delay: 1, transformOrigin: "50% 0%", zIndex: 5 })
                     this.clicked = true
                 } else {
-                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 0, opacity: 0, delay: 1, transformOrigin: "50% 0%" })
+                    TweenMax.to("#SignIn-DropDown", 0.25, { scaleY: 0, opacity: 0, delay: 1, transformOrigin: "50% 0%", zIndex: -1 })
                     this.clicked = false
                 }
             },
