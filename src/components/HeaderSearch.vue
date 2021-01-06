@@ -3,13 +3,13 @@
         <div id="search-container" v-on:click="expand">
             <h1 id="search-text">More Travel</h1>   
             <div id="search-subbar" >
-                <h1 class="subbar-item">Stays</h1>
-                <h1 class="subbar-item">Flights</h1>
-                <h1 class="subbar-item">Rovers</h1>
-                <h1 class="subbar-item">Shuttles</h1>
-                <h1 class="subbar-item">Packages</h1>
-                <h1 class="subbar-item">Things To Do</h1>
-                <h1 class="subbar-item">Deals</h1>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Stays</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Flights</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Rovers</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Shuttles</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Packages</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Things To Do</h1></div>
+                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Deals</h1></div>
             </div>
         </div>
     </div>
@@ -50,12 +50,17 @@ export default {
     height: 20px;
 }
 
+.search-item{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 #search-text{
     margin: 0px;
     color: teal;
     font-family:"Montserrat";
     font-size: 20px;
-    width: 120px;
 }
 
 #search-subbar{
@@ -71,10 +76,17 @@ export default {
 }
 
 .subbar-item{
-    margin: 10px;
     font-size: 20px;
     font-weight: lighter;
     color: lightslategrey;
+    margin: 0 10px;
+}
+
+.Header-Item-Img{
+    width: 20px;
+    height: 20px;
+    background-color: teal;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 700px){
