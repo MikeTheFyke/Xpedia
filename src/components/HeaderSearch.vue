@@ -42,7 +42,19 @@ export default {
             },
             StaysUnlight(){
                 TweenMax.to("#Search-Stays", 0.5, { backgroundColor: "transparent", color:"teal" });
-            }
+            },
+            FlightsHighlight(){
+                TweenMax.to("#Search-Flights", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            FlightsUnlight(){
+                TweenMax.to("#Search-Flights", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            RoversHighlight(){
+                TweenMax.to("#Search-Rovers", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            RoversUnlight(){
+                TweenMax.to("#Search-Rovers", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
         }
 }
 </script>
