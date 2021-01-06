@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="search-container" @mouseover="expand" @mouseleave="close">
+        <div id="search-container" v-on:click="expand">
             <h1 id="search-text">More Travel</h1>   
             <div id="search-subbar" >
                 <h1 class="subbar-item">Stays</h1>
