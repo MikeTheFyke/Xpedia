@@ -55,6 +55,30 @@ export default {
             RoversUnlight(){
                 TweenMax.to("#Search-Rovers", 0.5, { backgroundColor: "transparent", color:"teal" });
             },
+            ShuttlesHighlight(){
+                TweenMax.to("#Search-Shuttles", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            ShuttlesUnlight(){
+                TweenMax.to("#Search-Shuttles", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            PackagesHighlight(){
+                TweenMax.to("#Search-Packages", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            PackagesUnlight(){
+                TweenMax.to("#Search-Packages", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            ThingsHighlight(){
+                TweenMax.to("#Search-Things", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            ThingsUnlight(){
+                TweenMax.to("#Search-Things", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            DealsHighlight(){
+                TweenMax.to("#Search-Deals", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            DealsUnlight(){
+                TweenMax.to("#Search-Deals", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
         }
 }
 </script>
