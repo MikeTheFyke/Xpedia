@@ -7,7 +7,7 @@
             <a href="" id="Register-Link">Create a free account</a>
             <div class="Extras-Buttons" id="Favourites-Button" @mouseover="FavouriteHighlight" @mouseleave="FavouriteUnlight">List of favourites</div>
             <div class="Extras-Buttons" id="Rewards-Button" @mouseover="RewardsHighlight" @mouseleave="RewardsUnlight">Xpedia Rewards</div>
-            <div id="Feedback-Button">Feedback</div>
+            <div id="Feedback-Button" @mouseover="FeedbackHighlight" @mouseleave="FeedbackUnlight">Feedback</div>
         </div>
 </div>
     
@@ -52,6 +52,12 @@ export default {
             },
             RewardsUnlight(){
                 TweenMax.to("#Rewards-Button", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            FeedbackHighlight(){
+                TweenMax.to("#Feedback-Button", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            FeedbackUnlight(){
+                TweenMax.to("#Feedback-Button", 0.5, { backgroundColor: "transparent", color:"teal" });
             }
     }
 }
@@ -134,13 +140,17 @@ export default {
 
 #Feedback-Button{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 100%;
-    height: 20px;
+    height: 30px;
     color: teal;
     font-family:"Montserrat";
     font-size: 15px;
+    padding: 5px;
     padding-left: 20px;
+    border-top-color: #bdc9c4;
+    border-top-style: solid;
+    border-width: thin;
 }
 
 </style>
