@@ -7,6 +7,7 @@
             <a href="" id="Register-Link">Create a free account</a>
             <div class="Extras-Buttons" id="Favourites-Button" @mouseover="FavouriteHighlight" @mouseleave="FavouriteUnlight">List of favourites</div>
             <div class="Extras-Buttons" id="Rewards-Button" @mouseover="RewardsHighlight" @mouseleave="RewardsUnlight">Xpedia Rewards</div>
+            <div id="Feedback-Button">Feedback</div>
         </div>
 </div>
     
@@ -128,6 +129,17 @@ export default {
     background-color: transparent;
     cursor: pointer;
     padding: 5px;
+    padding-left: 20px;
+}
+
+#Feedback-Button{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 20px;
+    color: teal;
+    font-family:"Montserrat";
+    font-size: 15px;
     padding-left: 20px;
 }
 
