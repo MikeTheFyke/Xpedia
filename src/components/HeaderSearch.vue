@@ -54,6 +54,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 
 #search-text{
