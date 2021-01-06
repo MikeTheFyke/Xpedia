@@ -8,7 +8,7 @@
                 <div id="Search-Rovers" class="search-item" @mouseover="RoversHighlight" @mouseleave="RoversUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Rovers</h1></div>
                 <div id="Search-Shuttles" class="search-item" @mouseover="ShuttlesHighlight" @mouseleave="ShuttlesUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Shuttles</h1></div>
                 <div id="Search-Packages" class="search-item" @mouseover="PackagesHighlight" @mouseleave="PackagesUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Packages</h1></div>
-                <div id="Search-Things" class="search-item" @mouseover="ThingsHighlight" @mouseleave="ThingskUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Things To Do</h1></div>
+                <div id="Search-Things" class="search-item" @mouseover="ThingsHighlight" @mouseleave="ThingsUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Things To Do</h1></div>
                 <div id="Search-Deals" class="search-item" @mouseover="DealsHighlight" @mouseleave="DealsUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Deals</h1></div>
             </div>
         </div>
@@ -90,6 +90,7 @@ export default {
     left: 260px;
     width: 120px;
     height: 20px;
+    cursor: pointer;
 }
 
 .search-item{
@@ -97,6 +98,7 @@ export default {
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 #search-text{
