@@ -74,12 +74,11 @@ export default {
     top: 80px;
     right: 120px;
     width: 450px;
-    height: 250px;
-    padding: 10px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 10px 8px 8px 10px #e1e3e6;
-    padding: 10px;
     background-color: white;
+    overflow: hidden;
 }
 
 #DropDown-Title{
@@ -120,7 +119,7 @@ export default {
 }
 
 .Extras-Buttons{
-    width: 98%;
+    width: 100%;
     height: 20px;
     color: teal;
     font-family:"Montserrat";
@@ -129,7 +128,7 @@ export default {
     background-color: transparent;
     cursor: pointer;
     padding: 5px;
-    
+    padding-left: 20px;
 }
 
 </style>
