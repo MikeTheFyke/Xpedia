@@ -22,18 +22,21 @@ export default {
     name: 'HeaderSearch',
     data(){
         return{
-
+            clicked: false,
         }
     }, mounted: function(){
          TweenMax.to("#search-subbar", 0, { opacity: 0})
     },
         methods: {
             expand() {
-                TweenMax.to("#search-subbar", 0.25, { scaleY: 1, opacity: 1, delay: 1, transformOrigin: "50% 0%", zIndex: 5 })
-            },
-            close() {
-                TweenMax.to("#search-subbar", 0.25, { scaleY: 0, opacity: 0, delay: 1, transformOrigin: "50% 0%", zIndex: -1 })
+            if (this.clicked === false){
+                TweenMax.to("#search-subbar", 0.5, { scaleY: 1, opacity: 1, transformOrigin: "50% 0%", zIndex: 5 })
+                this.clicked = true
+            } else {
+                TweenMax.to("#search-subbar", 0.25, { scaleY: 0, opacity: 0, delay: 0.5, transformOrigin: "50% 0%", zIndex: -1 })
+                this.clicked = false
             }
+            },
         }
 }
 </script>
