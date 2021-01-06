@@ -5,8 +5,8 @@
             <h1 id="DropDown-Title">Members can access discount, points<br>and special features</h1>
             <button id="SignIn-Button" @mouseover="buttonPopUp" @mouseleave="buttonUnPop">Sign in</button>
             <a href="" id="Register-Link">Create a free account</a>
-            <div class="Extras-Buttons" id="Favorites-Button" @mouseover="buttonHighlight" @mouseleave="buttonUnlight">List of favorites</div>
-            <div class="Extras-Buttons" id="Rewards-Button" @mouseover="buttonHighlight" @mouseleave="buttonUnlight">Xpedia Rewards</div>
+            <div class="Extras-Buttons" id="Favourites-Button" @mouseover="FavouriteHighlight" @mouseleave="FavouriteUnlight">List of favourites</div>
+            <div class="Extras-Buttons" id="Rewards-Button" @mouseover="RewardsHighlight" @mouseleave="RewardsUnlight">Xpedia Rewards</div>
         </div>
 </div>
     
@@ -40,11 +40,17 @@ export default {
             buttonUnPop() {
                 TweenMax.to("#SignIn-Button", 0.5, { scaleX: 1, scaleY: 1, backgroundColor: "teal", color: "white", ease: "Linear.easeInOut" });
             },
-            buttonHighlight(){
-                TweenMax.to("#Favorites-Button", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            FavouriteHighlight(){
+                TweenMax.to("#Favourites-Button", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
             },
-            buttonUnlight(){
-                TweenMax.to("#Favorites-Button", 0.5, { backgroundColor: "transparent", color:"teal" });
+            FavouriteUnlight(){
+                TweenMax.to("#Favourites-Button", 0.5, { backgroundColor: "transparent", color:"teal" });
+            },
+            RewardsHighlight(){
+                TweenMax.to("#Rewards-Button", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            RewardsUnlight(){
+                TweenMax.to("#Rewards-Button", 0.5, { backgroundColor: "transparent", color:"teal" });
             }
     }
 }
@@ -109,8 +115,8 @@ export default {
     margin: 10px 25%;
 }
 
-#Favorites-Button{
-    margin-top: 20px;
+#Favourites-Button{
+    margin-top: 10px;
 }
 
 .Extras-Buttons{
