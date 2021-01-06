@@ -3,13 +3,13 @@
         <div id="search-container" v-on:click="expand">
             <h1 id="search-text">More Travel</h1>   
             <div id="search-subbar" >
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Stays</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Flights</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Rovers</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Shuttles</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Packages</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Things To Do</h1></div>
-                <div class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Deals</h1></div>
+                <div id="Search-Stays" class="search-item" @mouseover="StaysHighlight" @mouseleave="StaysUnlight"><div class="Header-Item-Img"></div><h1 class="subbar-item">Stays</h1></div>
+                <div id="Search-Flights" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Flights</h1></div>
+                <div id="Search-Rovers" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Rovers</h1></div>
+                <div id="Search-Shuttles" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Shuttles</h1></div>
+                <div id="Search-Packages" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Packages</h1></div>
+                <div id="Search-Things" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Things To Do</h1></div>
+                <div id="Search-Deals" class="search-item"><div class="Header-Item-Img"></div><h1 class="subbar-item">Deals</h1></div>
             </div>
         </div>
     </div>
@@ -37,6 +37,12 @@ export default {
                 this.clicked = false
             }
             },
+            StaysHighlight(){
+                TweenMax.to("#Search-Stays", 0.5, { backgroundColor: "#bdc9c4", color:"white" });
+            },
+            StaysUnlight(){
+                TweenMax.to("#Search-Stays", 0.5, { backgroundColor: "transparent", color:"teal" });
+            }
         }
 }
 </script>
