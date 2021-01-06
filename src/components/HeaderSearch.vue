@@ -29,10 +29,10 @@ export default {
     },
         methods: {
             expand() {
-                TweenMax.to("#search-subbar", 1, { opacity: 1, delay: 1})
+                TweenMax.to("#search-subbar", 0.25, { scaleY: 1, opacity: 1, delay: 1, transformOrigin: "50% 0%", zIndex: 5 })
             },
             close() {
-                TweenMax.to("#search-subbar", 1, { opacity: 0, delay: 1})
+                TweenMax.to("#search-subbar", 0.25, { scaleY: 0, opacity: 0, delay: 1, transformOrigin: "50% 0%", zIndex: -1 })
             }
         }
 }
