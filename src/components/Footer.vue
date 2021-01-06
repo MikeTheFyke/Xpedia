@@ -91,8 +91,8 @@ export default {
 }
 
 #External-Image-Link{
-    width: 10%;
-    height: 20%;
+    width: 10vw;
+    height: 10vw;
     margin: 40px 45% 0px 45%;
     background-color: teal;
     border-radius: 15px;
