@@ -2,6 +2,10 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
+            <div id="terra-container">
+                <div id="terra"><img src="../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
+                <div id="terra-beta"><img src="../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
+            </div>
             <div id="venus-container"><img src="../images/PlanetMaps/venusMap.png" id="venus-map"></div>
             <div id="mercury-container"><img src="../images/PlanetMaps/mercuryMap.png" id="mercury-map"></div>
             <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
@@ -109,6 +113,41 @@ export default {
     position: relative;
     top: 0px;
     left: -400px;
+    height: 100%;
+}
+
+#terra{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#earth-map{
+    position: relative;
+    top: 0px;
+    left: -800px;
+    height: 100%;
+}
+
+#terra-beta{
+    position: inherit;
+    top: 20px;
+    left: 41%;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+#moon-map{
     height: 100%;
 }
 
