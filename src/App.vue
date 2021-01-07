@@ -6,6 +6,7 @@
     <Safety />
     <TripIdeas />
     <SwitchRoutine />
+    <Solar />
     <NextDestination />
     <Explore />
     <Footer />
@@ -20,6 +21,7 @@ import CheckIn from './components/CheckIn'
 import Safety from './components/Safety'
 import TripIdeas from './components/NextTripIdeas'
 import SwitchRoutine from './components/SwitchRoutine'
+import Solar from './components/Solar'
 import NextDestination from './components/NextDestination'
 import Explore from './components/Explore'
 import Footer from './components/Footer'
@@ -34,6 +36,7 @@ export default {
     Safety,
     TripIdeas,
     SwitchRoutine,
+    Solar,
     NextDestination,
     Explore,
     Footer,
