@@ -1,7 +1,9 @@
 <template>
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
-        <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
+        <div id="Planet-Container">
+            <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
+        </div>
     </div>
 </template>
 
@@ -37,6 +39,13 @@ export default {
     font-family: "Montserrat";
     font-size: 20px;
     margin: 10px 0;
+}
+
+#Planet-Container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
 }
 
 #sun-container{
