@@ -2,6 +2,7 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
+            <div id="venus-container"><img src="../images/PlanetMaps/venusMap.png" id="venus-map"></div>
             <div id="mercury-container"><img src="../images/PlanetMaps/mercuryMap.png" id="mercury-map"></div>
             <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
         </div>
@@ -87,6 +88,24 @@ export default {
 }
 
 #mercury-map{
+    position: relative;
+    top: 0px;
+    left: -400px;
+    height: 100%;
+}
+
+#venus-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#venus-map{
     position: relative;
     top: 0px;
     left: -400px;
