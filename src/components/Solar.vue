@@ -1,7 +1,7 @@
 <template>
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
-        <div id="sun-container"><img src="/public/images/sunMap.png" id="sun-map"></div>
+        <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
     </div>
 </template>
 
@@ -46,7 +46,6 @@ export default {
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0 auto;
     overflow: hidden;
 }
 
