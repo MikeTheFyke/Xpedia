@@ -127,6 +127,10 @@ export default {
     height: 100%;
 }
 
+#terra-container{
+
+}
+
 #terra{
     width: 200px;
     height: 200px;
@@ -146,9 +150,9 @@ export default {
 }
 
 #terra-beta{
-    position: inherit;
-    top: 20px;
-    left: 41%;
+    position: relative;
+    top: -200px;
+    left: 0px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
