@@ -37,7 +37,7 @@ export default {
         }
     },
         mounted: function(){
-        TweenMax.to("#sun-map", 10, { x: "39vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#sun-map", 10, { x: "356px", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#mercury-map", 8, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#venus-map", 7, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
 
