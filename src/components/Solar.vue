@@ -16,6 +16,9 @@
 <script>
 import TweenMax  from 'gsap'
 import { TimelineMax } from 'gsap'
+import MotionPath from "gsap/MotionPathPlugin";
+
+TweenMax.registerPlugin( MotionPath ); 
 
 export default {
     name: 'Solar',
