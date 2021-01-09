@@ -37,6 +37,7 @@ export default {
         }
     },
         mounted: function(){
+        TweenMax.to("#mercury-map", 5, { x: "43.5vw", repeat: -1, ease: "Linear.easeInOut" });
         
         TweenMax.to("#venus-map", 5, { x: "44vw", repeat: -1, ease: "Linear.easeInOut" });
 
