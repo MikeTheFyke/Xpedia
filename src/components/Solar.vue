@@ -37,6 +37,9 @@ export default {
         }
     },
         mounted: function(){
+        
+        TweenMax.to("#venus-map", 5, { x: "44vw", repeat: -1, ease: "Linear.easeInOut" });
+
         var earthMap = new TimelineMax();
         earthMap.to("#earth-map", 5, { x: "500px", repeat: -1, ease: "Linear.easeInOut" });
         
@@ -123,7 +126,7 @@ export default {
 #venus-map{
     position: relative;
     top: 0px;
-    left: -400px;
+    left: -550px;
     height: 100%;
 }
 
