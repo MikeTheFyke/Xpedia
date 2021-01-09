@@ -37,9 +37,9 @@ export default {
         }
     },
         mounted: function(){
-        TweenMax.to("#sun-map", 5, { x: "39vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#mercury-map", 5, { x: "43.5vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#venus-map", 5, { x: "44vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#sun-map", 10, { x: "39vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#mercury-map", 8, { x: "43.5vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#venus-map", 7, { x: "44vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
         earthMap.to("#earth-map", 5, { x: "500px", repeat: -1, ease: "Linear.easeInOut" });
