@@ -42,7 +42,7 @@ export default {
         TweenMax.to("#venus-map", 7, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
-        earthMap.to("#earth-map", 5, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
+        earthMap.to("#earth-map", 5, { x: "25vw", repeat: -1, ease: "Linear.easeInOut" });
         
         var terraBeta = TweenMax.timeline( { repeat: -1 });
             terraBeta.to("#terra-beta", { motionPath: { path:[ { x: 95, y: 5 }, { x: 190, y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
@@ -149,7 +149,7 @@ export default {
 #earth-map{
     position: relative;
     top: 0px;
-    left: -800px;
+    left: -30vw;
     height: 100%;
 }
 
