@@ -38,7 +38,7 @@ export default {
     },
         mounted: function(){
         TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#mercury-map", 8, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#mercury-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#venus-map", 7, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
@@ -109,7 +109,7 @@ export default {
 #mercury-map{
     position: relative;
     top: 0px;
-    left: -400px;
+    left: -20vw;
     height: 100%;
 }
 
