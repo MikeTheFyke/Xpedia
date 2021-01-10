@@ -2,6 +2,11 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
+            <div id="mars-container">
+                <div id="mars-alpha"><img src="../images/PlanetMaps/marsMap.png" id="mars-map"></div>
+                <div id="mars-phobos"><img src="../images/PlanetMaps/phobosMap.png" id="phobos-map" alt=""></div>
+                <div id="mars-deimos"><img src="../images/PlanetMaps/deimosMap.png" id="deimos-map" alt=""></div>
+            </div>
             <div id="terra-container">
                 <div id="terra"><img src="../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
                 <div id="terra-beta"><img src="../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
@@ -45,10 +50,12 @@ export default {
         earthMap.to("#earth-map", 5, { x: "25vw", repeat: -1, ease: "Linear.easeInOut" });
         
         var terraBeta = TweenMax.timeline( { repeat: -1 });
-            terraBeta.to("#terra-beta", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "90vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+            terraBeta.to("#terra-beta", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#terra-beta", 0, { zIndex: -1})
             .to("#terra-beta", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#terra-beta", 0, { zIndex: 2 });
+
+            TweenMax.to("#mars-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
@@ -75,7 +82,7 @@ export default {
     width: 100%;
     height: 100%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #sun-container{
