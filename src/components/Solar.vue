@@ -177,4 +177,57 @@ export default {
     height: 100%;
 }
 
+#mars-container{
+    width: 20vw;
+    height: 20vw;
+}
+
+#mars-alpha{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mars-map{
+    position: relative;
+    top: 0px;
+    left: -20vw;
+    height: 100%;
+}
+
+#mars-phobos{
+    position: absolute;
+    top: 0.5vw;
+    left: 0px;
+    width: 2px;
+    height: 3px;
+    border-radius: 1.5px;
+    overflow: hidden;
+}
+
+#phobos-map{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+
+#mars-deimos{
+    position: absolute;
+    top: 1.5vw;
+    left: 0px;
+    width: 4px;
+    height: 5px;
+    border-radius: 2.5px;
+    overflow: hidden;
+}
+
+#deimos-map{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+
+
 </style>
