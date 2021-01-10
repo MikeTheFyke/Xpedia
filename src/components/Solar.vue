@@ -37,12 +37,12 @@ export default {
         }
     },
         mounted: function(){
-        TweenMax.to("#sun-map", 10, { x: "356px", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#mercury-map", 8, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#venus-map", 7, { x: "400px", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#mercury-map", 8, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#venus-map", 7, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
-        earthMap.to("#earth-map", 5, { x: "500px", repeat: -1, ease: "Linear.easeInOut" });
+        earthMap.to("#earth-map", 5, { x: "5vw", repeat: -1, ease: "Linear.easeInOut" });
         
         var terraBeta = TweenMax.timeline( { repeat: -1 });
             terraBeta.to("#terra-beta", { motionPath: { path:[ { x: 95, y: 5 }, { x: 190, y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
@@ -91,7 +91,7 @@ export default {
 #sun-map{
     position: relative;
     top: 0px;
-    left: -400px;
+    left: -20vw;
     height: 100%;
 }
 
