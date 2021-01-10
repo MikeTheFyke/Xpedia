@@ -89,9 +89,6 @@ export default {
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     overflow: hidden;
 }
 
@@ -106,9 +103,6 @@ export default {
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -124,9 +118,6 @@ export default {
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -146,9 +137,6 @@ export default {
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -167,9 +155,6 @@ export default {
     width: 2vw;
     height: 2vw;
     border-radius: 1.5vw;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
     overflow: hidden;
 }
 
