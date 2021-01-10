@@ -79,9 +79,9 @@ export default {
 }
 
 #sun-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -96,9 +96,9 @@ export default {
 }
 
 #mercury-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -114,9 +114,9 @@ export default {
 }
 
 #venus-container{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -136,9 +136,9 @@ export default {
 }
 
 #terra{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
@@ -155,11 +155,11 @@ export default {
 
 #terra-beta{
     position: relative;
-    top: -200px;
+    top: -10vw;
     left: 0px;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1.5vw;
     border-color: black;
     border-style: solid;
     border-width: thin;
