@@ -56,6 +56,12 @@ export default {
             .to("#terra-beta", 0, { zIndex: 2 });
 
             TweenMax.to("#mars-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+
+        var Deimos = TweenMax.timeline( { repeat: -1 });
+            Deimos.to("#mars-deimos", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+            .to("#mars-deimos", 0, { zIndex: -1})
+            .to("#mars-deimos", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+            .to("#mars-deimos", 0, { zIndex: 2 });
     },
     methods:{
 
