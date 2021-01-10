@@ -178,8 +178,8 @@ export default {
 }
 
 #mars-container{
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 #mars-alpha{
