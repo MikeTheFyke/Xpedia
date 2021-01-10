@@ -198,12 +198,12 @@ export default {
 }
 
 #mars-phobos{
-    position: absolute;
-    top: 0.5vw;
+    position: relative;
+    top: -10vw;
     left: 0px;
-    width: 2px;
-    height: 3px;
-    border-radius: 1.5px;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
     overflow: hidden;
 }
 
@@ -214,12 +214,12 @@ export default {
 }
 
 #mars-deimos{
-    position: absolute;
-    top: 1.5vw;
+    position: relative;
+    top: -8vw;
     left: 0px;
-    width: 4px;
-    height: 5px;
-    border-radius: 2.5px;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
     overflow: hidden;
 }
 
