@@ -63,11 +63,11 @@ export default {
             .to("#mars-deimos", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#mars-deimos", 0, { zIndex: 2 });
 
-        var Deimos = TweenMax.timeline( { repeat: -1 });
-            Deimos.to("#mars-deimos", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
-            .to("#mars-deimos", 0, { zIndex: -1})
-            .to("#mars-deimos", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
-            .to("#mars-deimos", 0, { zIndex: 2 });
+        var Phobos = TweenMax.timeline( { repeat: -1 });
+            Phobos.to("#mars-phobos", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            .to("#mars-phobos", 0, { zIndex: -1})
+            .to("#mars-phobos", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            .to("#mars-phobos", 0, { zIndex: 2 });
     },
     methods:{
 
