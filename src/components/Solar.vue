@@ -69,6 +69,8 @@ export default {
             .to("#mars-phobos", 0, { zIndex: -1})
             .to("#mars-phobos", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
             .to("#mars-phobos", 0, { zIndex: 2 });
+
+        TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
