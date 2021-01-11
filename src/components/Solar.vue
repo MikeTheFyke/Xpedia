@@ -5,6 +5,7 @@
             <div>
                 <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
                 <div class="saturn-ring" id="saturn-ring01"></div>
+                <div class="saturn-ring" id="saturn-ring02"></div>
             </div>
             <div id="mars-container">
                 <div id="mars-alpha"><img src="../images/PlanetMaps/marsMap.png" id="mars-map"></div>
@@ -74,6 +75,12 @@ export default {
             .to("#mars-phobos", 0, { zIndex: 2 });
 
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+
+        var SaturnRing = TweenMax.timeline( { repeat: -1 });
+            SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            .to(".saturn-ring", 0, { zIndex: -1})
+            .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            .to(".saturn-ring", 0, { zIndex: 2 });
     },
     methods:{
 
@@ -249,10 +256,10 @@ export default {
 
 .saturn-ring{
     position: relative;
-    top: -8vw;
-    left: 0px;
-    width: 2vw;
-    height: 2vw;
+    top: -6vw;
+    left: -1vw;
+    width: 0.5vw;
+    height: 0.5vw;
     border-radius: 1vw;
     background-color: gray;
     border-color: black;
@@ -260,4 +267,9 @@ export default {
     border-width: thin;
 }
 
+#saturn-ring02{
+    position: relative;
+    top: -6vw;
+    left: -0.5vw;
+}
 </style>
