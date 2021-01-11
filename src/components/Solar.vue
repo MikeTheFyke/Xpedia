@@ -2,7 +2,10 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
-            <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
+            <div>
+                <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
+                <div class="saturn-ring" id="saturn-ring01"></div>
+            </div>
             <div id="mars-container">
                 <div id="mars-alpha"><img src="../images/PlanetMaps/marsMap.png" id="mars-map"></div>
                 <div id="mars-phobos"><img src="../images/PlanetMaps/phobosMap.png" id="phobos-map" alt=""></div>
@@ -242,6 +245,19 @@ export default {
     top: 0px;
     left: -20vw;
     height: 100%;
+}
+
+.saturn-ring{
+    position: relative;
+    top: -8vw;
+    left: 0px;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
 }
 
 </style>
