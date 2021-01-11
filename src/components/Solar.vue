@@ -6,6 +6,14 @@
                 <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
                 <div class="saturn-ring" id="saturn-ring01"></div>
                 <div class="saturn-ring" id="saturn-ring02"></div>
+                <div class="saturn-ring" id="saturn-ring03"></div>
+                <div class="saturn-ring" id="saturn-ring04"></div>
+                <div class="saturn-ring" id="saturn-ring05"></div>
+                <div class="saturn-ring" id="saturn-ring06"></div>
+                <div class="saturn-ring" id="saturn-ring07"></div>
+                <div class="saturn-ring" id="saturn-ring08"></div>
+                <div class="saturn-ring" id="saturn-ring09"></div>
+                <div class="saturn-ring" id="saturn-ring10"></div>
             </div>
             <div id="mars-container">
                 <div id="mars-alpha"><img src="../images/PlanetMaps/marsMap.png" id="mars-map"></div>
