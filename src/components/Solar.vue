@@ -272,4 +272,22 @@ export default {
     top: -6vw;
     left: -0.5vw;
 }
+
+#saturn-ring03{
+    position: relative;
+    top: -6vw;
+    left: -0.5vw;
+}
+
+#saturn-ring04{
+    position: relative;
+    top: -6vw;
+    left: -0.5vw;
+}
+
+#saturn-ring05{
+    position: relative;
+    top: -6vw;
+    left: -0.5vw;
+}
 </style>
