@@ -301,27 +301,27 @@ export default {
 
 #saturn-ring06{
     position: relative;
-    top: -7vw;
-    left: -0.5vw;
+    top: -8vw;
+    left: -1.5vw;
 }
 #saturn-ring07{
     position: relative;
-    top: -7vw;
-    left: -0.5vw;
+    top: -9vw;
+    left: 2.5vw;
 }
 #saturn-ring08{
     position: relative;
-    top: -7vw;
-    left: -0.5vw;
+    top: -10vw;
+    left: 1.75vw;
 }
 #saturn-ring09{
     position: relative;
-    top: -7vw;
-    left: -0.5vw;
+    top: -11.5vw;
+    left: 2vw;
 }
 #saturn-ring10{
     position: relative;
-    top: -7vw;
-    left: -0.5vw;
+    top: -12vw;
+    left: 3.5vw;
 }
 </style>
