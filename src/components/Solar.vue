@@ -18,7 +18,8 @@
             </div>
             <div id="venus-container"><img src="../images/PlanetMaps/venusMap.png" id="venus-map"></div>
             <div id="mercury-container"><img src="../images/PlanetMaps/mercuryMap.png" id="mercury-map"></div>
-            <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div>
+            <!-- <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div> -->
+            <Sun />
         </div>
     </div>
 </template>
@@ -26,13 +27,15 @@
 <script>
 import TweenMax  from 'gsap'
 import { TimelineMax } from 'gsap'
-import MotionPath from "gsap/MotionPathPlugin";
+import MotionPath from "gsap/MotionPathPlugin"
 
 import Pluto from './partials/Pluto'
 import Neptune from './partials/Neptune'
 import Uranus from './partials/Uranus'
 import Jupiter from './partials/Jupiter'
 import Saturn from './partials/Saturn'
+
+import Sun from './partials/Sun'
 
 TweenMax.registerPlugin( MotionPath ); 
 
@@ -44,10 +47,11 @@ export default {
         Uranus,
         Jupiter,
         Saturn,
+        Sun,
     },    
     data(){
         return{
-            sunStatus : false,
+            // sunStatus : false,
             mercuryStatus : false,
             venusStatus : false,
             terraStatus : false,
@@ -55,7 +59,7 @@ export default {
         }
     },
         mounted: function(){
-        TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
+        // TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#mercury-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#venus-map", 7, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
@@ -108,7 +112,7 @@ export default {
     display:flex;
     justify-content: space-around;
 }
-
+/* 
 #sun-container{
     width: 10vw;
     height: 10vw;
@@ -121,7 +125,7 @@ export default {
     top: 0px;
     left: -20vw;
     height: 100%;
-}
+} */
 
 #mercury-container{
     width: 10vw;
