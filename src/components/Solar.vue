@@ -90,6 +90,8 @@ export default {
             .to(".saturn-ring", 0, { zIndex: -1})
             .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(".saturn-ring", 0, { zIndex: 2 });
+
+        TweenMax.to("#jupiter-map", 8, { x: "15vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
