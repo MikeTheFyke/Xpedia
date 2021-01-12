@@ -358,4 +358,19 @@ export default {
     height: 100%;
 }
 
+#neptune-container{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#neptune-map{
+    position: relative;
+    top: 0px;
+    left: -15vw;
+    height: 100%;
+}
+
 </style>
