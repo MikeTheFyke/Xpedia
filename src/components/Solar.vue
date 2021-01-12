@@ -91,7 +91,7 @@ export default {
             .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(".saturn-ring", 0, { zIndex: 2 });
 
-        TweenMax.to("#jupiter-map", 8, { x: "15vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
@@ -336,7 +336,7 @@ export default {
 #jupiter-map{
     position: relative;
     top: 0px;
-    left: -13vw;
+    left: -20vw;
     height: 100%;
 }
 
