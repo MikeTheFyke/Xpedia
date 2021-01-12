@@ -16,7 +16,7 @@
                 <div id="terra"><img src="../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
                 <div id="terra-beta"><img src="../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
             </div>
-            <div id="venus-container"><img src="../images/PlanetMaps/venusMap.png" id="venus-map"></div>
+            <Venus />
             <Mercury />
             <Sun />
         </div>
@@ -34,6 +34,7 @@ import Uranus from './partials/Uranus'
 import Jupiter from './partials/Jupiter'
 import Saturn from './partials/Saturn'
 
+import Venus from './partials/Venus'
 import Mercury from './partials/Mercury'
 import Sun from './partials/Sun'
 
@@ -47,18 +48,17 @@ export default {
         Uranus,
         Jupiter,
         Saturn,
+        Venus,
         Mercury,
         Sun,
     },    
     data(){
         return{
-            venusStatus : false,
             terraStatus : false,
             marsStatus : false,
         }
     },
         mounted: function(){
-        TweenMax.to("#venus-map", 7, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
         earthMap.to("#earth-map", 5, { x: "25vw", repeat: -1, ease: "Linear.easeInOut" });
@@ -108,50 +108,6 @@ export default {
     height: 100%;
     display:flex;
     justify-content: space-around;
-}
-/* 
-#sun-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    overflow: hidden;
-}
-
-#sun-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
-} */
-
-/* #mercury-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#mercury-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
-} */
-
-#venus-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#venus-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
 }
 
 #terra-container{
