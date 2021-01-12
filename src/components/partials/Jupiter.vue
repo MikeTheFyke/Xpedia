@@ -1,5 +1,5 @@
 <template>
-    <div id="jupiter-Vue-Container">
+    <div id="Jupiter-Vue-Container">
         <div id="jupiter-container"><img src="../../images/PlanetMaps/jupiterMap.png" id="jupiter-map"></div>
     </div>    
 </template>
