@@ -3,7 +3,6 @@
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
             <Pluto />
-            <!-- <div id="pluto-container"><img src="../images/PlanetMaps/plutoMap.png" id="pluto-map"></div> -->
             <div id="neptune-container"><img src="../images/PlanetMaps/neptuneMap.png" id="neptune-map"></div>
             <div id="uranus-container"><img src="../images/PlanetMaps/uranusMap.png" id="uranus-map"></div>
             <div id="jupiter-container"><img src="../images/PlanetMaps/jupiterMap.png" id="jupiter-map"></div>
@@ -61,7 +60,6 @@ export default {
             jupiterStatus : false,
             uranusStatus : false,
             neptuneStatus : false,
-            // plutoStatus : false,
         }
     },
         mounted: function(){
@@ -103,7 +101,6 @@ export default {
         TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#neptune-map", 8, { x: "13.25vw", repeat: -1, ease: "Linear.easeInOut" });
-        // TweenMax.to("#pluto-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
@@ -381,20 +378,5 @@ export default {
     left: -15vw;
     height: 100%;
 }
-
-/* #pluto-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#pluto-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
-} */
 
 </style>
