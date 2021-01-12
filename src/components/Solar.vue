@@ -17,8 +17,7 @@
                 <div id="terra-beta"><img src="../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
             </div>
             <div id="venus-container"><img src="../images/PlanetMaps/venusMap.png" id="venus-map"></div>
-            <div id="mercury-container"><img src="../images/PlanetMaps/mercuryMap.png" id="mercury-map"></div>
-            <!-- <div id="sun-container"><img src="../images/PlanetMaps/sunMap.png" id="sun-map"></div> -->
+            <Mercury />
             <Sun />
         </div>
     </div>
@@ -35,6 +34,7 @@ import Uranus from './partials/Uranus'
 import Jupiter from './partials/Jupiter'
 import Saturn from './partials/Saturn'
 
+import Mercury from './partials/Mercury'
 import Sun from './partials/Sun'
 
 TweenMax.registerPlugin( MotionPath ); 
@@ -47,20 +47,17 @@ export default {
         Uranus,
         Jupiter,
         Saturn,
+        Mercury,
         Sun,
     },    
     data(){
         return{
-            // sunStatus : false,
-            mercuryStatus : false,
             venusStatus : false,
             terraStatus : false,
             marsStatus : false,
         }
     },
         mounted: function(){
-        // TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#mercury-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#venus-map", 7, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var earthMap = new TimelineMax();
@@ -127,7 +124,7 @@ export default {
     height: 100%;
 } */
 
-#mercury-container{
+/* #mercury-container{
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
@@ -140,7 +137,7 @@ export default {
     top: 0px;
     left: -20vw;
     height: 100%;
-}
+} */
 
 #venus-container{
     width: 10vw;
