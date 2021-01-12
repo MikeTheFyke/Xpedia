@@ -93,6 +93,7 @@ export default {
             .to(".saturn-ring", 0, { zIndex: 2 });
 
         TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
