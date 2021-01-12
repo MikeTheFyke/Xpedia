@@ -281,25 +281,21 @@ export default {
     top: -6vw;
     left: -0.5vw;
 }
-
 #saturn-ring03{
     position: relative;
     top: -6vw;
     left: 0.5vw;
 }
-
 #saturn-ring04{
     position: relative;
     top: -8vw;
     left: 0.5vw;
 }
-
 #saturn-ring05{
     position: relative;
     top: -7vw;
     left: -0.5vw;
 }
-
 #saturn-ring06{
     position: relative;
     top: -8vw;
@@ -320,9 +316,26 @@ export default {
     top: -11.5vw;
     left: 2vw;
 }
+
 #saturn-ring10{
     position: relative;
     top: -12vw;
     left: 3.5vw;
 }
+
+#jupiter-container{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#jupiter-map{
+    position: relative;
+    top: 0px;
+    left: -13vw;
+    height: 100%;
+}
+
 </style>
