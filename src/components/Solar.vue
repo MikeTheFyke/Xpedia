@@ -2,7 +2,7 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
-            <div id="jupiter-container"><img src="/public/images/jupiterMap.png" id="jupiter-map"></div>
+            <div id="jupiter-container"><img src="../images/PlanetMaps/jupiterMap.png" id="jupiter-map"></div>
             <div id="saturn-planetary-container">
                 <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
                 <div class="saturn-ring" id="saturn-ring01"></div>
