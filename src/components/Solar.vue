@@ -3,9 +3,9 @@
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
             <Pluto />
-            <div id="neptune-container"><img src="../images/PlanetMaps/neptuneMap.png" id="neptune-map"></div>
-            <div id="uranus-container"><img src="../images/PlanetMaps/uranusMap.png" id="uranus-map"></div>
-            <div id="jupiter-container"><img src="../images/PlanetMaps/jupiterMap.png" id="jupiter-map"></div>
+            <Neptune />
+            <Uranus />
+            <Jupiter />
             <div id="saturn-planetary-container">
                 <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
                 <div class="saturn-ring" id="saturn-ring01"></div>
@@ -41,6 +41,9 @@ import { TimelineMax } from 'gsap'
 import MotionPath from "gsap/MotionPathPlugin";
 
 import Pluto from './partials/Pluto'
+import Neptune from './partials/Neptune'
+import Uranus from './partials/Uranus'
+import Jupiter from './partials/Jupiter'
 
 TweenMax.registerPlugin( MotionPath ); 
 
@@ -48,6 +51,9 @@ export default {
     name: 'Solar',
       components: {
         Pluto,
+        Neptune,
+        Uranus,
+        Jupiter,
     },    
     data(){
         return{
@@ -57,9 +63,6 @@ export default {
             terraStatus : false,
             marsStatus : false,
             saturnStatus : false,
-            jupiterStatus : false,
-            // uranusStatus : false,
-            neptuneStatus : false,
         }
     },
         mounted: function(){
@@ -97,13 +100,8 @@ export default {
             .to(".saturn-ring", 0, { zIndex: -1})
             .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(".saturn-ring", 0, { zIndex: 2 });
-
-        TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
-        // TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#neptune-map", 8, { x: "13.25vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
-
     }    
 }
 </script>
@@ -333,50 +331,4 @@ export default {
     top: -12vw;
     left: 3.5vw;
 }
-
-#jupiter-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#jupiter-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
-}
-
-/* #uranus-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#uranus-map{
-    position: relative;
-    top: 0px;
-    left: -20vw;
-    height: 100%;
-} */
-
-#neptune-container{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 5vw;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#neptune-map{
-    position: relative;
-    top: 0px;
-    left: -15vw;
-    height: 100%;
-}
-
 </style>
