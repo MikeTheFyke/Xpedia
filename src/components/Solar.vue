@@ -2,7 +2,8 @@
     <div id="Solar-Container">
         <h1 id="Solar-Header">Find your next destination with our Solar System</h1>
         <div id="Planet-Container">
-            <div>
+            <div id="jupiter-container"><img src="/public/images/jupiterMap.png" id="jupiter-map"></div>
+            <div id="saturn-planetary-container">
                 <div id="saturn-container"><img src="../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
                 <div class="saturn-ring" id="saturn-ring01"></div>
                 <div class="saturn-ring" id="saturn-ring02"></div>
@@ -85,9 +86,9 @@ export default {
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(".saturn-ring", 0, { zIndex: -1})
-            .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 1.5, ease: "Linear.easeInOut" })
+            .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(".saturn-ring", 0, { zIndex: 2 });
     },
     methods:{
