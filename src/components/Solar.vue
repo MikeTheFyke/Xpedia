@@ -97,6 +97,7 @@ export default {
         TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#neptune-map", 8, { x: "13.25vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#pluto-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
 
