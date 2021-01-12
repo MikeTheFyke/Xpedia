@@ -10,6 +10,9 @@
 
 <script>
 import TweenMax  from 'gsap'
+import MotionPath from "gsap/MotionPathPlugin"
+
+TweenMax.registerPlugin( MotionPath );
 
 export default {
         name: 'Mars',
