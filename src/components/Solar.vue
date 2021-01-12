@@ -341,4 +341,19 @@ export default {
     height: 100%;
 }
 
+#uranus-container{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#uranus-map{
+    position: relative;
+    top: 0px;
+    left: -20vw;
+    height: 100%;
+}
+
 </style>
