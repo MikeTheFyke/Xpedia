@@ -58,7 +58,7 @@ export default {
             marsStatus : false,
             saturnStatus : false,
             jupiterStatus : false,
-            uranusStatus : false,
+            // uranusStatus : false,
             neptuneStatus : false,
         }
     },
@@ -99,7 +99,7 @@ export default {
             .to(".saturn-ring", 0, { zIndex: 2 });
 
         TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
-        TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+        // TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
         TweenMax.to("#neptune-map", 8, { x: "13.25vw", repeat: -1, ease: "Linear.easeInOut" });
     },
     methods:{
@@ -349,7 +349,7 @@ export default {
     height: 100%;
 }
 
-#uranus-container{
+/* #uranus-container{
     width: 10vw;
     height: 10vw;
     border-radius: 5vw;
@@ -362,7 +362,7 @@ export default {
     top: 0px;
     left: -20vw;
     height: 100%;
-}
+} */
 
 #neptune-container{
     width: 10vw;
