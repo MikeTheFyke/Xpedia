@@ -375,4 +375,19 @@ export default {
     height: 100%;
 }
 
+#pluto-container{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#pluto-map{
+    position: relative;
+    top: 0px;
+    left: -20vw;
+    height: 100%;
+}
+
 </style>
