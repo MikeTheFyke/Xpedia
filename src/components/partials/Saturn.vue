@@ -30,6 +30,7 @@ export default {
             leftPosition : "-0vw",
             leftValue : "0",
             leftText : "vw",
+            random : "",
         }
     },
     mounted: function(){
@@ -38,6 +39,9 @@ export default {
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         for (var x = 0; x < 10; x ++){
+            this.random = Math.floor(Math.random() * 10) + 1;
+            console.log("Random" + this.random)
+
             this.leftText = "vw"
             var div = document.createElement("div")
             div.id = "saturn-rock";
@@ -53,7 +57,7 @@ export default {
             console.log(this.leftPosition)
             this.leftValue ++
             console.log(this.leftValue)
-            this.leftText = this.leftValue + this.leftText
+            this.leftText = this.random + this.leftText
             console.log("LeftText " + this.leftText)
             this.leftPosition = this.leftText
         }
