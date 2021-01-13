@@ -28,9 +28,11 @@ export default {
         return{
             saturnStatus : false,
             leftPosition : "-0vw",
-            leftValue : "0",
             leftText : "vw",
-            random : "",
+            randomX : "",
+            topPosition : "-0.5vw",
+            topText : "vw",
+            randomY : "",
         }
     },
     mounted: function(){
@@ -39,10 +41,13 @@ export default {
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         for (var x = 0; x < 10; x ++){
-            this.random = Math.floor(Math.random() * 10) + 1;
-            console.log("Random" + this.random)
+            this.randomX = Math.floor(Math.random() * 10) + 1;
+            this.randomY = (Math.floor(Math.random() * 10) + 1) / 10;
+            console.log("RandomY " + this.randomY)
+            console.log("Random" + this.randomX)
 
             this.leftText = "vw"
+            this.topText = "vw"
             var div = document.createElement("div")
             div.id = "saturn-rock";
             div.style.width = "1vw";
@@ -51,15 +56,17 @@ export default {
             div.style.backgroundColor = "red";
             div.style.position = "relative";
             div.style.left = this.leftPosition;
-            div.style.top = "-0.5vw";
+            div.style.top = this.topPositon;
             
             document.getElementById("saturn-ring").appendChild(div);
             console.log(this.leftPosition)
-            this.leftValue ++
-            console.log(this.leftValue)
-            this.leftText = this.random + this.leftText
+
+            this.topText = "-" + this.randomY + this.topText
+            this.leftText = this.randomX + this.leftText
             console.log("LeftText " + this.leftText)
             this.leftPosition = this.leftText
+            this.topPosition = this.topText
+            console.log("Top Position " + this.topPosition)
         }
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
