@@ -35,10 +35,13 @@ export default {
         for (var x = 0; x < 10; x ++){
         var div = document.createElement("div")
         div.id = "saturn-rock";
-        div.style.width = "2vw";
-        div.style.height = "2vw";
+        div.style.width = "1vw";
+        div.style.height = "1vw";
         div.style.borderRadius = "1vw";
-        div.style.backgroundColor ="red";
+        div.style.backgroundColor = "red";
+        div.style.position = "relative";
+        div.style.left = "-0vw";
+        div.style.top = "-0.5vw";
         
         document.getElementById("saturn-ring").appendChild(div);
         }
