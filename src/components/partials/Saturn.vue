@@ -32,19 +32,22 @@ export default {
     mounted: function(){
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
+        for (var x = 0; x < 10; x ++){
         var div = document.createElement("div")
+        div.id = "saturn-rock";
         div.style.width = "2vw";
         div.style.height = "2vw";
         div.style.borderRadius = "1vw";
         div.style.backgroundColor ="red";
-        div.style.zIndex = 5;
+        
         document.getElementById("saturn-ring").appendChild(div);
+        }
 
-        // var SaturnRing = TweenMax.timeline( { repeat: -1 });
-        //     SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-        //     .to(".saturn-ring", 0, { zIndex: -1})
-        //     .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-        //     .to(".saturn-ring", 0, { zIndex: 2 });
+        var SaturnRing = TweenMax.timeline( { repeat: -1 });
+            SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock", 0, { zIndex: -1})
+            .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock", 0, { zIndex: 2 });
     }
     
 }
