@@ -42,8 +42,8 @@ export default {
 
 <style scoped>
 #mars-container{
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
 }
 
 #mars-alpha{
