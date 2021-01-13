@@ -42,7 +42,7 @@ export default {
 
         for (var x = 0; x < 10; x ++){
             this.randomX = Math.floor(Math.random() * 10) + 1;
-            this.randomY = (Math.floor(Math.random() * 10) + 1) / 10;
+            this.randomY = (Math.floor(Math.random() * 30) + 1) / 10;
             console.log("RandomY " + this.randomY)
             console.log("Random" + this.randomX)
 
