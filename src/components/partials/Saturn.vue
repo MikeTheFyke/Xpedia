@@ -33,26 +33,29 @@ export default {
         }
     },
     mounted: function(){
+
+
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         for (var x = 0; x < 10; x ++){
-        this.leftText = "vw"
-        var div = document.createElement("div")
-        div.id = "saturn-rock";
-        div.style.width = "1vw";
-        div.style.height = "1vw";
-        div.style.borderRadius = "1vw";
-        div.style.backgroundColor = "red";
-        div.style.position = "relative";
-        div.style.left = this.leftPosition;
-        div.style.top = "-0.5vw";
-        
-        document.getElementById("saturn-ring").appendChild(div);
-        console.log(this.leftPosition)
-        this.leftValue ++
-        console.log(this.leftValue)
-        this.leftText = this.leftValue + this.leftText
-        console.log("LeftText " + this.leftText)
+            this.leftText = "vw"
+            var div = document.createElement("div")
+            div.id = "saturn-rock";
+            div.style.width = "1vw";
+            div.style.height = "1vw";
+            div.style.borderRadius = "1vw";
+            div.style.backgroundColor = "red";
+            div.style.position = "relative";
+            div.style.left = this.leftPosition;
+            div.style.top = "-0.5vw";
+            
+            document.getElementById("saturn-ring").appendChild(div);
+            console.log(this.leftPosition)
+            this.leftValue ++
+            console.log(this.leftValue)
+            this.leftText = this.leftValue + this.leftText
+            console.log("LeftText " + this.leftText)
+            this.leftPosition = this.leftText
         }
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
