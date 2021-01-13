@@ -2,8 +2,8 @@
     <div id="Saturn-Vue-Container">
         <div id="saturn-planetary-container">
                 <div id="saturn-container"><img src="../../images/PlanetMaps/saturnMap.png" id="saturn-map"></div>
-                <div class="saturn-ring" id="saturn-ring01"></div>
-                <div class="saturn-ring" id="saturn-ring02"></div>
+                <div class="saturn-ring" id="saturn-ring"></div>
+                <!-- <div class="saturn-ring" id="saturn-ring02"></div>
                 <div class="saturn-ring" id="saturn-ring03"></div>
                 <div class="saturn-ring" id="saturn-ring04"></div>
                 <div class="saturn-ring" id="saturn-ring05"></div>
@@ -11,7 +11,7 @@
                 <div class="saturn-ring" id="saturn-ring07"></div>
                 <div class="saturn-ring" id="saturn-ring08"></div>
                 <div class="saturn-ring" id="saturn-ring09"></div>
-                <div class="saturn-ring" id="saturn-ring10"></div>
+                <div class="saturn-ring" id="saturn-ring10"></div>  -->
             </div>
     </div>    
 </template>
@@ -32,11 +32,19 @@ export default {
     mounted: function(){
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
-        var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to(".saturn-ring", 0, { zIndex: -1})
-            .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to(".saturn-ring", 0, { zIndex: 2 });
+        var div = document.createElement("div")
+        div.style.width = "2vw";
+        div.style.height = "2vw";
+        div.style.borderRadius = "1vw";
+        div.style.backgroundColor ="red";
+        div.style.zIndex = 5;
+        document.getElementById("saturn-ring").appendChild(div);
+
+        // var SaturnRing = TweenMax.timeline( { repeat: -1 });
+        //     SaturnRing.to(".saturn-ring", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+        //     .to(".saturn-ring", 0, { zIndex: -1})
+        //     .to(".saturn-ring", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+        //     .to(".saturn-ring", 0, { zIndex: 2 });
     }
     
 }
@@ -64,13 +72,8 @@ export default {
     left: -1vw;
     width: 0.5vw;
     height: 0.5vw;
-    border-radius: 1vw;
-    background-color: gray;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
 }
-
+/* 
 #saturn-ring02{
     position: relative;
     top: -6vw;
@@ -115,5 +118,5 @@ export default {
     position: relative;
     top: -12vw;
     left: 3.5vw;
-}
+} */
 </style>
