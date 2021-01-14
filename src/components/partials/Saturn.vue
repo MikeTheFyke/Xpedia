@@ -72,7 +72,8 @@ export default {
                 left : this.leftText,
                 top : this.topText,
                 x1 : (60 - this.randomX) + "vw",
-                x2 : (100 - this.randomX) + "vw"
+                x2 : (100 - this.randomX) + "vw",
+                speed: parseFloat((Math.random() * 4) + 2).toFixed(2)
             })
             console.log(this.ringArray[x])
             console.log("ID : " + this.ringArray[x].id)
