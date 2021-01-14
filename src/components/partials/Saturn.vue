@@ -42,9 +42,9 @@ export default {
 
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
-        for (var x = 0; x < 40; x ++){
-            this.randomX = Math.floor(Math.random() * 10) + 1;
-            this.randomY = ((Math.floor(Math.random() * 20) + 0) / 10) - 1;
+        for (var x = 0; x < 60; x ++){
+            this.randomX = parseFloat((Math.random() * 8) + 1).toFixed(2)
+            this.randomY = ((Math.floor(Math.random() * 20) + 0) / 10) - 1
             this.randomY = parseFloat(this.randomY).toFixed(2)
             this.saturnRockName = this.saturnRockName + x;
             this.leftText = "vw"
@@ -82,9 +82,9 @@ export default {
         
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to(this.ringArray[x].id, { motionPath: { path:[ { x: this.ringArray[x].x1, y: 5 }, { x: this.ringArray[x].x2, y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            SaturnRing.to(this.ringArray[x].id, { motionPath: { path:[ { x: this.ringArray[x].x1, y: 5 }, { x: this.ringArray[x].x2, y:0 }, ], curviness: 1 }, duration: this.ringArray[x].speed, ease: "Linear.easeInOut" })
             .to(this.ringArray[x].id, 0, { zIndex: -1})
-            .to(this.ringArray[x].id, { motionPath: { path:[{ x: this.ringArray[x].x1, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to(this.ringArray[x].id, { motionPath: { path:[{ x: this.ringArray[x].x1, y:5 },{ x: "0vw", y:0 },],curviness: 1 }, duration: this.ringArray[x].speed, ease: "Linear.easeInOut" })
             .to(this.ringArray[x].id, 0, { zIndex: 2 });
             }
     }
