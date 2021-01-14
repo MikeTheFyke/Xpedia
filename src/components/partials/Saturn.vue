@@ -40,9 +40,9 @@ export default {
 
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
-        for (var x = 0; x < 10; x ++){
+        for (var x = 0; x < 40; x ++){
             this.randomX = Math.floor(Math.random() * 10) + 1;
-            this.randomY = (Math.floor(Math.random() * 30) + 1) / 10;
+            this.randomY = ((Math.floor(Math.random() * 20) + 0) / 10) - 1;
             console.log("RandomY " + this.randomY)
             console.log("Random" + this.randomX)
 
@@ -54,7 +54,7 @@ export default {
             div.style.height = "1vw";
             div.style.borderRadius = "1vw";
             div.style.backgroundColor = "red";
-            div.style.position = "relative";
+            div.style.position = "absolute";
             div.style.left = this.leftPosition;
             div.style.top = this.topPosition;
             
@@ -69,11 +69,11 @@ export default {
             console.log("Top Position " + this.topPosition)
         }
 
-        // var SaturnRing = TweenMax.timeline( { repeat: -1 });
-        //     SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-        //     .to("#saturn-rock", 0, { zIndex: -1})
-        //     .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-        //     .to("#saturn-rock", 0, { zIndex: 2 });
+        var SaturnRing = TweenMax.timeline( { repeat: -1 });
+            SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock", 0, { zIndex: -1})
+            .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock", 0, { zIndex: 2 });
     }
     
 }
