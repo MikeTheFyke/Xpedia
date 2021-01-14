@@ -70,7 +70,9 @@ export default {
             this.ringArray.push({
                 id : "#saturn-rock" + x,
                 left : this.leftText,
-                top : this.topText
+                top : this.topText,
+                x1 : (60 - this.randomX) + "vw",
+                x2 : (100 - this.randomX) + "vw"
             })
             console.log(this.ringArray[x])
             console.log("ID : " + this.ringArray[x].id)
