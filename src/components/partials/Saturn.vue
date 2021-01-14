@@ -68,20 +68,22 @@ export default {
             this.topPosition = this.topText
             
             this.ringArray.push({
-                id : "saturn-rock" + x,
+                id : "#saturn-rock" + x,
                 left : this.leftText,
                 top : this.topText
             })
             console.log(this.ringArray[x])
+            console.log("ID : " + this.ringArray[x].id)
             
             this.saturnRockName = "saturn-rock"
-        }
+        
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to("#saturn-rock0", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock0", 0, { zIndex: -1})
-            .to("#saturn-rock0", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock0", 0, { zIndex: 2 });
+            SaturnRing.to(this.ringArray[x].id, { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to(this.ringArray[x].id, 0, { zIndex: -1})
+            .to(this.ringArray[x].id, { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to(this.ringArray[x].id, 0, { zIndex: 2 });
+            }
     }
     
 }
