@@ -33,6 +33,7 @@ export default {
             topPosition : "-0.5vw",
             topText : "vw",
             randomY : "",
+            saturnRockName : "saturn-rock"
         }
     },
     mounted: function(){
@@ -43,13 +44,12 @@ export default {
         for (var x = 0; x < 40; x ++){
             this.randomX = Math.floor(Math.random() * 10) + 1;
             this.randomY = ((Math.floor(Math.random() * 20) + 0) / 10) - 1;
-            console.log("RandomY " + this.randomY)
-            console.log("Random" + this.randomX)
-
+            this.saturnRockName = this.saturnRockName + x;
             this.leftText = "vw"
             this.topText = "vw"
             var div = document.createElement("div")
-            div.id = "saturn-rock";
+
+            div.id = this.saturnRockName;
             div.style.width = "1vw";
             div.style.height = "1vw";
             div.style.borderRadius = "1vw";
@@ -59,21 +59,19 @@ export default {
             div.style.top = this.topPosition;
             
             document.getElementById("saturn-ring").appendChild(div);
-            console.log(this.leftPosition)
 
             this.topText = "-" + this.randomY + this.topText
             this.leftText = this.randomX + this.leftText
-            console.log("LeftText " + this.leftText)
             this.leftPosition = this.leftText
             this.topPosition = this.topText
-            console.log("Top Position " + this.topPosition)
+            this.saturnRockName = "saturn-rock"
         }
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock", 0, { zIndex: -1})
-            .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock", 0, { zIndex: 2 });
+            SaturnRing.to("#saturn-rock0", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock0", 0, { zIndex: -1})
+            .to("#saturn-rock0", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to("#saturn-rock0", 0, { zIndex: 2 });
     }
     
 }
