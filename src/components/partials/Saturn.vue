@@ -43,14 +43,9 @@ export default {
         TweenMax.to("#saturn-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
 
         for (var x = 0; x < 40; x ++){
-            this.ringArray.push({
-                id : "saturn-rock" + x,
-                left : Math.floor(Math.random() * 10) + 1,
-                top : ((Math.floor(Math.random() * 20) + 0) / 10) - 1
-            })
-            console.log(this.ringArray[x])
             this.randomX = Math.floor(Math.random() * 10) + 1;
             this.randomY = ((Math.floor(Math.random() * 20) + 0) / 10) - 1;
+            this.randomY = parseFloat(this.randomY).toFixed(2)
             this.saturnRockName = this.saturnRockName + x;
             this.leftText = "vw"
             this.topText = "vw"
@@ -71,6 +66,14 @@ export default {
             this.leftText = this.randomX + this.leftText
             this.leftPosition = this.leftText
             this.topPosition = this.topText
+            
+            this.ringArray.push({
+                id : "saturn-rock" + x,
+                left : this.leftText,
+                top : this.topText
+            })
+            console.log(this.ringArray[x])
+            
             this.saturnRockName = "saturn-rock"
         }
 
