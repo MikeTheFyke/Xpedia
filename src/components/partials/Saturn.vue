@@ -56,7 +56,7 @@ export default {
             div.style.backgroundColor = "red";
             div.style.position = "relative";
             div.style.left = this.leftPosition;
-            div.style.top = this.topPositon;
+            div.style.top = this.topPosition;
             
             document.getElementById("saturn-ring").appendChild(div);
             console.log(this.leftPosition)
@@ -69,11 +69,11 @@ export default {
             console.log("Top Position " + this.topPosition)
         }
 
-        var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock", 0, { zIndex: -1})
-            .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
-            .to("#saturn-rock", 0, { zIndex: 2 });
+        // var SaturnRing = TweenMax.timeline( { repeat: -1 });
+        //     SaturnRing.to("#saturn-rock", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+        //     .to("#saturn-rock", 0, { zIndex: -1})
+        //     .to("#saturn-rock", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+        //     .to("#saturn-rock", 0, { zIndex: 2 });
     }
     
 }
