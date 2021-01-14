@@ -81,9 +81,9 @@ export default {
         
 
         var SaturnRing = TweenMax.timeline( { repeat: -1 });
-            SaturnRing.to(this.ringArray[x].id, { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "100vw", y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            SaturnRing.to(this.ringArray[x].id, { motionPath: { path:[ { x: this.ringArray[x].x1, y: 5 }, { x: this.ringArray[x].x2, y:0 }, ], curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(this.ringArray[x].id, 0, { zIndex: -1})
-            .to(this.ringArray[x].id, { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
+            .to(this.ringArray[x].id, { motionPath: { path:[{ x: this.ringArray[x].x1, y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 3.5, ease: "Linear.easeInOut" })
             .to(this.ringArray[x].id, 0, { zIndex: 2 });
             }
     }
