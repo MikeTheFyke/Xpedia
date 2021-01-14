@@ -33,7 +33,9 @@ export default {
             topPosition : "-0.5vw",
             topText : "vw",
             randomY : "",
-            saturnRockName : "saturn-rock"
+            saturnRockName : "saturn-rock",
+            ringArray : [],
+
         }
     },
     mounted: function(){
