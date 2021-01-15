@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-         TweenMax.to("#mercury-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+         TweenMax.to("#mercury-map", 8, { x: "14vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
