@@ -25,9 +25,9 @@ export default {
         earthMap.to("#earth-map", 5, { x: "17.5vw", repeat: -1, ease: "Linear.easeInOut" });
         
         var terraBeta = TweenMax.timeline( { repeat: -1 });
-            terraBeta.to("#terra-beta", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+            terraBeta.to("#terra-beta", { motionPath: { path:[ { x: "30vw", y: 5 }, { x: "70vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#terra-beta", 0, { zIndex: -1})
-            .to("#terra-beta", { motionPath: { path:[{ x: "60vw", y:5 },{ x: 0, y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
+            .to("#terra-beta", { motionPath: { path:[{ x: "30vw", y:5 },{ x: "0vw", y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#terra-beta", 0, { zIndex: 2 });
     }
     
@@ -57,8 +57,8 @@ export default {
     position: relative;
     top: -7vw;
     left: 0px;
-    width: 1vw;
-    height: 1vw;
+    width: 2vw;
+    height: 2vw;
     border-radius: 1vw;
     overflow: hidden;
 }
