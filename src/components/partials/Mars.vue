@@ -81,8 +81,8 @@ export default {
     position: relative;
     top: -6vw;
     left: 0px;
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     border-radius: 1vw;
     overflow: hidden;
 }
