@@ -56,6 +56,7 @@ export default {
             div.style.height = "1vw";
             div.style.borderRadius = "1vw";
             div.style.backgroundColor = "#939695";
+            div.style.backgroundImage = "linear-gradient(180deg, #939695, #626665)"
             div.style.position = "absolute";
             div.style.left = this.leftPosition;
             div.style.top = this.topPosition;
