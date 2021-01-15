@@ -22,7 +22,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#mars-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#mars-map", 8, { x: "14vw", repeat: -1, ease: "Linear.easeInOut" });
 
         var Deimos = TweenMax.timeline( { repeat: -1 });
             Deimos.to("#mars-deimos", { motionPath: { path:[ { x: "60vw", y: 5 }, { x: "120vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
@@ -47,8 +47,8 @@ export default {
 }
 
 #mars-alpha{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     margin: 0 auto;
     overflow: hidden;
@@ -63,7 +63,7 @@ export default {
 
 #mars-phobos{
     position: relative;
-    top: -10vw;
+    top: -8vw;
     left: 0px;
     width: 1vw;
     height: 1vw;
@@ -79,7 +79,7 @@ export default {
 
 #mars-deimos{
     position: relative;
-    top: -8vw;
+    top: -6vw;
     left: 0px;
     width: 2vw;
     height: 2vw;
