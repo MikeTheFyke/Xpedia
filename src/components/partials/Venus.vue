@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-                 TweenMax.to("#venus-map", 7, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+                 TweenMax.to("#venus-map", 7, { x: "14vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
