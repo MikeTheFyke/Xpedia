@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#neptune-map", 8, { x: "12vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#neptune-map", 8, { x: "10vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }

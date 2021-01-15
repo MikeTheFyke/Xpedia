@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#uranus-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#uranus-map", 8, { x: "8.5vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
@@ -23,8 +23,8 @@ export default {
 
 <style scoped>
 #uranus-container{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     margin: 0 auto;
     overflow: hidden;
