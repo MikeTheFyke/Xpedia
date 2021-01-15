@@ -23,8 +23,8 @@ export default {
 
 <style scoped>
 #sun-container{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     overflow: hidden;
 }
