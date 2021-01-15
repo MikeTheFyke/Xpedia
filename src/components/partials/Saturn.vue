@@ -55,7 +55,7 @@ export default {
             div.style.width = "1vw";
             div.style.height = "1vw";
             div.style.borderRadius = "1vw";
-            div.style.backgroundColor = "red";
+            div.style.backgroundColor = "#939695";
             div.style.position = "absolute";
             div.style.left = this.leftPosition;
             div.style.top = this.topPosition;
