@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#jupiter-map", 8, { x: "20vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#jupiter-map", 8, { x: "14vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
@@ -25,8 +25,8 @@ export default {
 
 
 #jupiter-container{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     margin: 0 auto;
     overflow: hidden;
