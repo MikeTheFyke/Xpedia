@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#sun-map", 10, { x: "17.8vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#sun-map", 10, { x: "12.5vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
@@ -32,7 +32,7 @@ export default {
 #sun-map{
     position: relative;
     top: 0px;
-    left: -20vw;
+    left: -15vw;
     height: 100%;
 }
 </style>
