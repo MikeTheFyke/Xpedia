@@ -95,8 +95,8 @@ export default {
 
 <style scoped>
 #saturn-container{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     margin: 0 auto;
     overflow: hidden;
