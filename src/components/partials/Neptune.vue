@@ -15,7 +15,7 @@ export default {
         }
     },
     mounted: function(){
-        TweenMax.to("#neptune-map", 8, { x: "13.25vw", repeat: -1, ease: "Linear.easeInOut" });
+        TweenMax.to("#neptune-map", 8, { x: "12vw", repeat: -1, ease: "Linear.easeInOut" });
     }
     
 }
@@ -24,8 +24,8 @@ export default {
 <style scoped>
 
 #neptune-container{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 5vw;
     margin: 0 auto;
     overflow: hidden;
@@ -34,7 +34,8 @@ export default {
 #neptune-map{
     position: relative;
     top: 0px;
-    left: -15vw;
+    left: -12vw;
+    width: 20vw;
     height: 100%;
 }
 
