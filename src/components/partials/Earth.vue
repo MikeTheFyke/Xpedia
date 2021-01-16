@@ -3,6 +3,7 @@
         <div id="terra-container" @mouseover="popup" @mouseleave="unpop">
             <div id="terra"><img src="../../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
             <div id="terra-beta"><img src="../../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
+            <h1 id="terra-title">Earth</h1>
         </div>
     </div>    
 </template>
@@ -77,5 +78,13 @@ export default {
 
 #moon-map{
     height: 100%;
+}
+
+#terra-title{
+    color: teal;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin: -50px 0;
+    z-index: 5;
 }
 </style>
