@@ -1,6 +1,6 @@
 <template>
     <div id="Earth-Vue-Container">
-        <div id="terra-container" @mouseover="popup">
+        <div id="terra-container" @mouseover="popup" @mouseleave="unpop">
             <div id="terra"><img src="../../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
             <div id="terra-beta"><img src="../../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
         </div>
@@ -37,6 +37,9 @@ export default {
     methods:{
         popup(){
             TweenMax.to("#terra-container", 2, { x:"-15vw" ,y: "-2vw", scale: 4 })
+        },
+        unpop(){
+            TweenMax.to("#terra-container", 2, { x:"0" ,y: "0", scale: 1 })
         }
     }
     
