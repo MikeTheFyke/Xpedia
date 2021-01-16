@@ -22,10 +22,9 @@ export default {
         }
     },
     mounted: function(){
+
         var earthMap = new TimelineMax();
         earthMap.to("#earth-map", 8, { x: "17.5vw", repeat: -1, ease: "Linear.easeInOut" });
-        
-        TweenMax.to("#terra-title", 0, { opacity: 0 })
 
         var terraBeta = TweenMax.timeline( { repeat: -1 });
             terraBeta.to("#terra-beta", { motionPath: { path:[ { x: "30vw", y: 5 }, { x: "70vw", y:0 }, ], curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
@@ -40,9 +39,11 @@ export default {
     methods:{
         popup(){
             TweenMax.to("#terra-container", 2, { x:"-15vw" ,y: "-2vw", scale: 4 })
+            TweenMax.to("#terra-title", 2, { marginTop: "-20px", opacity: 1 })
         },
         unpop(){
             TweenMax.to("#terra-container", 2, { x:"0" ,y: "0", scale: 1 })
+            TweenMax.to("#terra-title", 1, { marginTop: "-50px", opacity: 0 })
         }
     }
     
@@ -86,7 +87,6 @@ export default {
     color: teal;
     font-family: "Montserrat";
     font-size: 20px;
-    margin: -20px 10px;
-    z-index: 5;
+    opacity: 0;
 }
 </style>
