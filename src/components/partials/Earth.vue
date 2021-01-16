@@ -1,6 +1,6 @@
 <template>
     <div id="Earth-Vue-Container">
-        <div id="terra-container">
+        <div id="terra-container" @mouseover="popup">
             <div id="terra"><img src="../../images/PlanetMaps/earthMap.png" id="earth-map" alt=""></div>
             <div id="terra-beta"><img src="../../images/PlanetMaps/moonMap.png" id="moon-map" alt=""></div>
         </div>
@@ -29,6 +29,15 @@ export default {
             .to("#terra-beta", 0, { zIndex: -1})
             .to("#terra-beta", { motionPath: { path:[{ x: "30vw", y:5 },{ x: "0vw", y:0 },],curviness: 1 }, duration: 2.5, ease: "Linear.easeInOut" })
             .to("#terra-beta", 0, { zIndex: 2 });
+
+        // document.getElementById('terra-container').addEventListener('mouseover', function () {
+        //     TweenMax.to("#terra-container", 2, { x:"-15vw" ,y: "-2vw", scale: 4 })
+        // })
+    },
+    methods:{
+        popup(){
+            TweenMax.to("#terra-container", 2, { x:"-15vw" ,y: "-2vw", scale: 4 })
+        }
     }
     
 }
